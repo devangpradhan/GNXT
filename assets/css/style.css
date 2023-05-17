@@ -19621,6 +19621,7 @@ textarea:focus {
   z-index: 9;
 }
 
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .offer-product-wrap .mega-fashion-pro-title2 {
     padding: 51px 10px 50px;
@@ -19634,7 +19635,6 @@ textarea:focus {
     right: 10px;
   }
 }
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .offer-product-wrap .mega-fashion-pro-title2 {
     padding: 51px 10px 50px;
@@ -19646,6 +19646,7 @@ textarea:focus {
   font-weight: bold;
   margin: 0;
 }
+
 
 .offer-product-wrap:hover .product-img a img {
   -webkit-transform: scale(1.1);
