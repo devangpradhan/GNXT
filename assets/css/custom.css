@@ -1,5 +1,5 @@
 
-.offer-product-wrap .ppb-gnxt-pro-title {
+.ppb-product-wrap .ppb-gnxt-pro-title {
     position: absolute;
     z-index: 9;
     text-align: center;
@@ -7,7 +7,7 @@
     left:16%;
   }
   
-  .offer-product-wrap .ppb-gnxt-pro-title h1 {
+  .ppb-product-wrap .ppb-gnxt-pro-title h1 {
     font-size:65px;
     font-weight: 700;
     color:#ffffff;
@@ -16,23 +16,22 @@
   }
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .offer-product-wrap .ppb-gnxt-pro-title {
+    .ppb-product-wrap .ppb-gnxt-pro-title {
       padding: 51px 10px 50px;
     }
   }
   @media only screen and (max-width: 767px) {
-    .offer-product-wrap .ppb-gnxt-pro-title {
+    .ppb-product-wrap .ppb-gnxt-pro-title {
       padding: 21px 10px 20px;
       left: 10px;
       right: 10px;
     }
   }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .offer-product-wrap .ppb-gnxt-pro-title {
+    .ppb-product-wrap .ppb-gnxt-pro-title {
       padding: 51px 10px 50px;
       top:31%;
       left:8%;
     }
   }
-  
   
