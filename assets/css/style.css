@@ -19768,7 +19768,7 @@ textarea:focus {
 }
 
 .section-title h2 {
-  font-size: 29px;
+  font-size: 35px;
   font-weight: 500;
   margin: 0 0 27px;
 }
@@ -19782,7 +19782,7 @@ textarea:focus {
 
 .section-title h2.bold {
   font-weight: bold;
-  margin: 0 0 34px;
+  margin: 0 0 35px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -20093,9 +20093,8 @@ textarea:focus {
 
 .section-title-6 h2 {
   color: #151C0F;
-  font-size: 29px;
-  font-weight: bold;
-  font-family: 'Open Sans' sans-serif;
+  font-size: 35px;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -23205,6 +23204,7 @@ textarea:focus {
 /*---------- 14. Footer style ------------*/
 .footer-area {
   position: relative;
+  background-color: #000;
 }
 
 .footer-area.kids-footer {
@@ -23247,7 +23247,8 @@ textarea:focus {
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
-  margin: 0 0 50px;
+  margin: 0 0 20px;
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -23318,7 +23319,8 @@ textarea:focus {
 }
 
 .footer-widget .footer-info-list ul li {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -23339,14 +23341,14 @@ textarea:focus {
 
 .footer-widget .footer-info-list ul li a {
   font-size: 16px;
-  color: #777;
+  color: #fff;
   font-weight: 300;
   display: block;
   line-height: 1;
 }
 
 .footer-widget .footer-info-list ul li a:hover {
-  color: #0A1039;
+  color: #dc3545;
 }
 
 .footer-widget .footer-info-list.info-list-mrg-dec ul li {
