@@ -1,7 +1,8 @@
 /*-----------------------------------------------------------------------------------
     
-    Template Name: Dking - Multipurpose eCommerce HTML Template
+    Template Name: GNXT - Goldmedal eCommerce HTML Template
     Version: 1.0
+    Author : - Devang Pradhan
     
 -----------------------------------------------------------------------------------
     
@@ -13439,7 +13440,53 @@ textarea:focus {
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-wrap.banner-23-mrg-3 {
+    margin-right: 30px;
+  }
+}
 
+@media only screen and (max-width: 767px) {
+  .banner-wrap.banner-23-mrg-3 {
+    margin-right: 0px;
+  }
+}
+
+
+
+.banner-wrap .banner-24-position {
+  position: absolute;
+  left: 70px;
+  top: 85%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner-wrap .banner-24-position {
+    left: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-wrap .banner-24-position {
+    left: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-wrap .banner-24-position {
+    left: 20px;
+  }
+}
+
+
+.banner-wrap .banner-content-24 span {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
 
 .banner-wrap .banner-content-24 h2 {
   font-size: 29px;
@@ -13495,6 +13542,10 @@ textarea:focus {
   }
 }
 
+.banner-wrap .banner-content-24.banner-content-24-white span {
+  color: #ffffff;
+}
+
 .banner-wrap .banner-content-24.banner-content-24-white h2 {
   color: #ffffff;
 }
@@ -13503,45 +13554,8 @@ textarea:focus {
   color: #ffffff;
 }
 
-.banner-wrap .banner-24-position {
-  position: absolute;
-  left: 70px;
-  top: 80%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner-wrap .banner-24-position {
-    left: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-wrap .banner-24-position {
-    left: 40px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .banner-wrap .banner-24-position {
-    left: 20px;
-  }
-}
 
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-wrap.banner-23-mrg-3 {
-    margin-right: 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .banner-wrap.banner-23-mrg-3 {
-    margin-right: 0px;
-  }
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-wrap.banner-width-flex-50 {
@@ -13559,7 +13573,6 @@ textarea:focus {
     margin-bottom: 50px;
   }
 }
-
 
 @media only screen and (max-width: 767px) {
   .banner-wrap.mt-125 {
