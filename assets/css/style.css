@@ -13454,109 +13454,6 @@ textarea:focus {
 
 
 
-.banner-wrap .banner-24-position {
-  position: absolute;
-  left: 70px;
-  top: 85%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner-wrap .banner-24-position {
-    left: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-wrap .banner-24-position {
-    left: 40px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .banner-wrap .banner-24-position {
-    left: 20px;
-  }
-}
-
-
-.banner-wrap .banner-content-24 span {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.banner-wrap .banner-content-24 h2 {
-  font-size: 29px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.banner-wrap .banner-content-24 h2.bold {
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner-wrap .banner-content-24 h2 {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-wrap .banner-content-24 h2 {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .banner-wrap .banner-content-24 h2 {
-    font-size: 18px;
-  }
-}
-
-.banner-wrap .banner-content-24 h3 {
-  font-size: 60px;
-  font-weight: bold;
-  margin: 16px 0 52px;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner-wrap .banner-content-24 h3 {
-    font-size: 48px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-wrap .banner-content-24 h3 {
-    font-size: 40px;
-    margin: 16px 0 15px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .banner-wrap .banner-content-24 h3 {
-    font-size: 30px;
-    margin: 12px 0 10px;
-  }
-}
-
-.banner-wrap .banner-content-24.banner-content-24-white span {
-  color: #ffffff;
-}
-
-.banner-wrap .banner-content-24.banner-content-24-white h2 {
-  color: #ffffff;
-}
-
-.banner-wrap .banner-content-24.banner-content-24-white h3 {
-  color: #ffffff;
-}
-
-
-
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-wrap.banner-width-flex-50 {
     -webkit-box-flex: 0;
@@ -23704,7 +23601,7 @@ textarea:focus {
 }
 
 .footer-widget .footer-info-list ul li a {
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   font-weight: 300;
   display: block;

@@ -1,74 +1,325 @@
-
 .ppb-product-wrap .ppb-gnxt-pro-title {
-    position: absolute;
-    z-index: 9;
-    text-align: center;
-    top:43%;
-    left:16%;
-  }
-  
-  .ppb-product-wrap .ppb-gnxt-pro-title h1 {
-    font-size:65px;
-    font-weight: 700;
-    color:#ffffff;
-    margin: 0;
-    text-transform:uppercase;
-  }
-  
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .ppb-product-wrap .ppb-gnxt-pro-title {
-      padding: 51px 10px 50px;
-    }
-  }
-  @media only screen and (max-width: 767px) {
-    .ppb-product-wrap .ppb-gnxt-pro-title {
-      padding: 21px 10px 20px;
-      left: 10px;
-      right: 10px;
-    }
-  }
-  @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .ppb-product-wrap .ppb-gnxt-pro-title {
-      padding: 51px 10px 50px;
-      top:31%;
-      left:8%;
-    }
-  }
-  
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  top: 43%;
+  left: 16%;
+}
 
+.ppb-product-wrap .ppb-gnxt-pro-title h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
 
-  .banner-btn-24 {
-    padding:20px 0px 0px 10px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ppb-product-wrap .ppb-gnxt-pro-title {
+    padding: 51px 10px 50px;
   }
-  
-  
-  .banner-btn-24 a {
-    color: #000;
-    font-size: 15px;
-    font-weight: bold;
-    position: relative;
-    z-index: 2;
-    background: #fff;
-    border-radius: 50px;
-    padding: 8px 15px 8px 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ppb-product-wrap .ppb-gnxt-pro-title {
+    padding: 21px 10px 20px;
+    left: 10px;
+    right: 10px;
   }
-  
-  .banner-btn-24 a:hover {
-    color: #fff;
-    background: #000;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ppb-product-wrap .ppb-gnxt-pro-title {
+    padding: 51px 10px 50px;
+    top: 31%;
+    left: 8%;
   }
-  
-  @media only screen and (max-width: 767px) {
-    
-  .banner-btn-24 {
+}
+
+/* Banner-01 */
+
+.banner-wrap .banner-position-01 {
+  color: #ffffff;
+  position: absolute;
+  left: 5%;
+  top: 85%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner-wrap .banner-content-01 span {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.banner-wrap .banner-content-01 h2 {
+  font-size: 29px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.banner-wrap .banner-content-01 h2.bold {
+  font-weight: bold;
+}
+
+.banner-wrap .banner-content-01 h3 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 16px 0 52px;
+}
+
+.banner-btn-01 {
+  padding-top: 20px;
+}
+
+.banner-btn-01 a {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-radius: 50px;
+  padding: 8px 15px 8px 15px;
+}
+
+.banner-btn-01 a:hover {
+  color: #fff;
+  background: #000;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner-wrap .banner-position-01 {
+    left: 30px;
+  }
+
+  .banner-wrap .banner-content-01 h2 {
+    font-size: 25px;
+  }
+
+  .banner-wrap .banner-content-01 h3 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-wrap .banner-position-01 {
+    left: 40px;
+  }
+
+  .banner-wrap .banner-content-01 h2 {
+    font-size: 20px;
+  }
+
+  .banner-wrap .banner-content-01 h3 {
+    font-size: 40px;
+    margin: 16px 0 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-wrap .banner-position-01 {
+    left: 20px;
+  }
+
+  .banner-wrap .banner-content-01 h2 {
+    font-size: 18px;
+  }
+
+  .banner-wrap .banner-content-01 h3 {
+    font-size: 30px;
+    margin: 12px 0 10px;
+  }
+
+  .banner-btn-01 {
     font-size: 10px;
-    padding:10px 0px 0px 10px;
+    padding: 10px 0px 0px 10px;
   }
 
-
-
-    .banner-btn-24 a {
-      font-size: 12px;
-      padding: 5px 10px 5px 10px;
-    }
+  .banner-btn-01 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
   }
+}
+
+/* Banner-02 */
+
+.banner-wrap .banner-position-02 {
+  position: absolute;
+  left: 5%;
+  top: 93%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+.banner-btn-02 a {
+  z-index: 2;
+  color: #fff;
+  background: #000;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 50px;
+  padding: 8px 15px 8px 15px;
+}
+
+.banner-btn-02 a:hover {
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.banner-wrap .banner-content-02 span {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.banner-wrap .banner-content-02 h2 {
+  font-size: 29px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.banner-wrap .banner-content-02 h2.bold {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner-wrap .banner-content-02 h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-wrap .banner-content-02 h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-wrap .banner-content-02 h2 {
+    font-size: 18px;
+  }
+  .banner-btn-02 {
+    font-size: 10px;
+    padding: 10px 0px 0px 10px;
+  }
+  .banner-btn-02 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
+/* Banner-03 */
+
+.banner-wrap .banner-position-03 {
+  text-align:right;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner-wrap .banner-content-03 span {
+
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.banner-wrap .banner-content-03 h2 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  text-transform:uppercase;
+}
+
+.banner-wrap .banner-content-03 h3 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 16px 0 52px;
+}
+
+.banner-btn-03 {
+  padding: 20px 0px 0px 10px;
+}
+
+.banner-btn-03 a {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-radius: 50px;
+  padding: 8px 15px 8px 15px;
+}
+
+.banner-btn-03 a:hover {
+  color: #fff;
+  background: #000;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner-wrap .banner-position-03 {
+    left: 30px;
+  }
+
+  .banner-wrap .banner-content-03 h2 {
+    font-size: 25px;
+  }
+
+  .banner-wrap .banner-content-03 h3 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-wrap .banner-position-03 {
+    left: 40px;
+  }
+
+  .banner-wrap .banner-content-03 h2 {
+    font-size: 20px;
+  }
+
+  .banner-wrap .banner-content-03 h3 {
+    font-size: 40px;
+    margin: 16px 0 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-wrap .banner-position-03 {
+    left: 20px;
+  }
+
+  .banner-wrap .banner-content-03 h2 {
+    font-size: 18px;
+  }
+
+  .banner-wrap .banner-content-03 h3 {
+    font-size: 30px;
+    margin: 12px 0 10px;
+  }
+
+  .banner-btn-03 {
+    font-size: 10px;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .banner-btn-03 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
