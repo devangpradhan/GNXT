@@ -3284,7 +3284,7 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .btn-style-4 a.btn-ptb-1 {
-    padding: 14px 31px 15px;
+    padding: 8px 15px 8px 15px;
   }
 }
 
