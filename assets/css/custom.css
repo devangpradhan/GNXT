@@ -1,7 +1,6 @@
-
- /* Slide Button */
+/* Slide Button */
 .button_slide {
-  color: #FFF;
+  color: #fff;
   border: 2px solid rgb(216, 2, 134);
   border-radius: 0px;
   padding: 18px 36px;
@@ -10,26 +9,26 @@
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
+  box-shadow: inset 0 0 0 0 #d80286;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 
 .slide_down:hover {
-  box-shadow: inset 0 100px 0 0 #D80286;
+  box-shadow: inset 0 100px 0 0 #d80286;
 }
 
 .slide_right:hover {
-  box-shadow: inset 400px 0 0 0 #D80286;
+  box-shadow: inset 400px 0 0 0 #d80286;
 }
 
 .slide_left:hover {
-  box-shadow: inset 0 0 0 50px #D80286;
+  box-shadow: inset 0 0 0 50px #d80286;
 }
 
 .slide_diagonal:hover {
-  box-shadow: inset 400px 50px 0 0 #D80286;
+  box-shadow: inset 400px 50px 0 0 #d80286;
 }
 
 #outer {
@@ -41,51 +40,56 @@
 /* product page image */
 
 .ppb-product-wrap .ppb-gnxt-pro-title {
-  position: relative;
+  top: 40%;
+  left: 18%;
+  z-index: 9;
   overflow: hidden;
   position: absolute;
-  z-index: 9;
-  text-align: center;
-  top: 43%;
-  left: 16%;
+}
+
+.ppb-product-wrap .ppb-gnxt-pro-title img{
+  background-color: #707070;
 }
 
 .ppb-product-wrap .ppb-gnxt-pro-title h1 {
   font-size: 65px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0;
+  text-align: center;
+  align-items: center;
   text-transform: uppercase;
+  text-shadow: 0 1px 0 #B6B6B6, 0 2px 0 #ACACAC, 0 3px 0 #A2A2A2,
+    0 4px 0 #989898, 0 5px 0 #8E8E8E, 0 6px 0 #848484, 0 7px 0 #7A7A7A,
+    0 8px 0 #707070, 0 0 5px rgba(211, 211, 211, 0.05),
+    0 -1px 3px rgba(222, 222, 222, 0.2), 0 9px 9px rgba(222, 222, 222, 0.3),
+    0 12px 12px rgba(222, 222, 222, 0.3), 0 15px 15px rgba(222, 222, 222, 0.3);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .ppb-product-wrap .ppb-gnxt-pro-title {
-
+  .ppb-product-wrap .ppb-gnxt-pro-title{
+    top: 42%;
+    left: 17%;
   }
+
 }
 
 @media only screen and (max-width: 767px) {
-  .ppb-product-wrap .ppb-gnxt-pro-title {
-    padding: 21px 10px 20px;
-    left: 10px;
-    right: 10px;
+  .ppb-product-wrap .ppb-gnxt-pro-title{
+    top: 42%;
+    left: 17%;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .ppb-product-wrap .ppb-gnxt-pro-title {
-    padding: 51px 10px 50px;
-    top: 31%;
-    left: 8%;
+  .ppb-product-wrap .ppb-gnxt-pro-title{
+    top: 42%;
+    left: 17%;
   }
 }
-
-
 
 .ppb-product-wrap {
   position: relative;
   overflow: hidden;
-
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -154,9 +158,9 @@
 }
 
 .ppb-product-wrap .product-img.product-img-zoom a img {
-  -webkit-transition: all .5s ease 0s;
-  -o-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
