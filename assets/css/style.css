@@ -15050,6 +15050,7 @@ textarea:focus {
 .product-wrap {
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -15147,6 +15148,7 @@ textarea:focus {
   align-items: center;
   border-radius: 100%;
   background-color: #0CBDEE;
+
 }
 
 .product-wrap .product-img .product-offer h5 {
@@ -15155,6 +15157,10 @@ textarea:focus {
   line-height: 29px;
   color: #ffffff;
   margin: 0;
+}
+
+.product-wrap .product-content {
+  padding-bottom:10px;
 }
 
 .product-wrap .product-content h4 {
@@ -17622,6 +17628,11 @@ textarea:focus {
   .trending-product-content.ml-70 {
     margin-left: 0px;
   }
+}
+
+.shop-list-wrap{
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 25px;
 }
 
 .shop-list-wrap .product-list-img {
@@ -20538,9 +20549,15 @@ textarea:focus {
   font-weight: 900;
   line-height: 55px;
   margin: 0;
-  letter-spacing: -4.5px;
+  letter-spacing: -2.5px;
   text-transform: uppercase;
   word-spacing: 2.6px;
+}
+.section-title-10 span {
+  margin: 10px 0 0px;
+  font-size: 16px;
+  color: #828495;
+  display: block;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -20552,16 +20569,13 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .section-title-10 h2 {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1em;
   }
-}
 
-.section-title-10 span {
-  margin: 10px 0 0px;
-  font-size: 16px;
-  color: #828495;
-  display: block;
+  .section-title-10 span {
+    font-size:14px;
+   }
 }
 
 @media only screen and (max-width: 767px) {
@@ -24499,7 +24513,8 @@ textarea:focus {
 }
 
 .subscribe-form-2 .subscribe-form-style-2 .clear-2 input:hover {
-  background-color: #0A1039;
+  background-color: #F1F1F1;
+  color: #000;
 }
 
 .subscribe-form-2.subscribe-form-2-white .subscribe-form-style-2 .mc-form-2 input {
