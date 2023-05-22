@@ -41,14 +41,10 @@
 
 .ppb-product-wrap .ppb-gnxt-pro-title {
   top: 40%;
-  left: 18%;
+  left: 17%;
   z-index: 9;
   overflow: hidden;
   position: absolute;
-}
-
-.ppb-product-wrap .ppb-gnxt-pro-title img{
-  background-color: #707070;
 }
 
 .ppb-product-wrap .ppb-gnxt-pro-title h1 {
@@ -70,7 +66,6 @@
     top: 42%;
     left: 17%;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -83,9 +78,34 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .ppb-product-wrap .ppb-gnxt-pro-title{
     top: 42%;
-    left: 17%;
+    left: 13%;
   }
 }
+
+
+.ppb-product-wrap .product-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.ppb-product-wrap .product-img a {
+  display: block;
+}
+
+.ppb-product-wrap .product-img a img {
+  width: 100%;
+}
+
+.ppb-product-wrap .product-img.product-img-zoom a img {
+
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
 
 .ppb-product-wrap {
   position: relative;
@@ -144,27 +164,6 @@
   }
 }
 
-.ppb-product-wrap .product-img {
-  overflow: hidden;
-  position: relative;
-}
-
-.ppb-product-wrap .product-img a {
-  display: block;
-}
-
-.ppb-product-wrap .product-img a img {
-  width: 100%;
-}
-
-.ppb-product-wrap .product-img.product-img-zoom a img {
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
 
 /* Banner 01 */
 
@@ -224,11 +223,9 @@
   .banner-wrap .banner-position-01 {
     left: 30px;
   }
-
   .banner-wrap .banner-content-01 h2 {
     font-size: 25px;
   }
-
   .banner-wrap .banner-content-01 h3 {
     font-size: 48px;
   }
@@ -236,13 +233,12 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-wrap .banner-position-01 {
+    top: 65%;
     left: 40px;
   }
-
   .banner-wrap .banner-content-01 h2 {
     font-size: 20px;
   }
-
   .banner-wrap .banner-content-01 h3 {
     font-size: 40px;
     margin: 16px 0 15px;
@@ -251,23 +247,20 @@
 
 @media only screen and (max-width: 767px) {
   .banner-wrap .banner-position-01 {
+    top: 65%;
     left: 20px;
   }
-
   .banner-wrap .banner-content-01 h2 {
     font-size: 18px;
   }
-
   .banner-wrap .banner-content-01 h3 {
     font-size: 30px;
     margin: 12px 0 10px;
   }
-
   .banner-btn-01 {
     font-size: 10px;
     padding-top: 10px;
   }
-
   .banner-btn-01 a {
     font-size: 12px;
     padding: 5px 10px 5px 10px;
@@ -319,27 +312,35 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner-wrap .banner-content-02 h2 {
-    font-size: 25px;
+  .banner-btn-02 {
+    font-size: 20px;
+    padding: 10px 0px 10px 10px;
+  }
+  .banner-btn-02 a {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-wrap .banner-content-02 h2 {
-    font-size: 20px;
+  .banner-btn-02 {
+    font-size: 10px;
+    padding: 10px 0px 10px 10px;
   }
+  .banner-btn-02 a {
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
-  .banner-wrap .banner-content-02 h2 {
-    font-size: 18px;
-  }
   .banner-btn-02 {
     font-size: 10px;
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0px 10px 10px;
   }
   .banner-btn-02 a {
-    font-size: 20px;
+    font-size: 10px;
     padding: 5px 10px 5px 10px;
   }
 }
@@ -419,14 +420,15 @@
 
 @media only screen and (max-width: 767px) {
   .banner-wrap .banner-position-03 {
-    left: 40%;
+    left: 38%;
   }
   .banner-wrap .banner-content-03 span {
-    font-size: 12px;
+    font-size: 8px;
+    line-height:0em;
   }
 
   .banner-wrap .banner-content-03 h2 {
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .banner-btn-03 {
