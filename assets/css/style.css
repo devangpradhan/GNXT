@@ -4051,7 +4051,7 @@ textarea:focus {
 .main-menu>nav>ul>li>ul {
   -webkit-box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.09);
-  background-color: #262626;
+  background-color: #f7f7f7;
   position: absolute;
   top: 100%;
   left: 0;
@@ -4106,7 +4106,7 @@ textarea:focus {
 
 .main-menu>nav>ul>li>ul.sub-menu-width li a {
   display: block;
-  color: #D0D0D0;
+  color: #868686;
   font-size: 13px;
   font-weight: 300;
 }
@@ -4114,20 +4114,20 @@ textarea:focus {
 .main-menu>nav>ul>li>ul.sub-menu-width li a i {
   float: right;
   font-size: 12px;
-  color: #999;
+  color: #868686;
   font-weight: 600;
   position: relative;
   top: 6px;
 }
 
 .main-menu>nav>ul>li>ul.sub-menu-width li a:hover {
-  color: #ffffff;
+  color: #cacaca;
   text-decoration: underline;
 }
 
 .main-menu>nav>ul>li>ul.sub-menu-width li ul.lavel-menu {
   padding: 35px 0px 40px;
-  width: auto;
+  width: 220px;
   -webkit-transition: all 250ms ease-out;
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
@@ -4311,7 +4311,7 @@ textarea:focus {
 }
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li a.menu-title {
-  color: #fff;
+  color: #8f8f8f;
   font-size: 14px;
   padding: 0px 0px 12px 0px;
   position: relative;
@@ -4335,14 +4335,14 @@ textarea:focus {
 }
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li>ul li a {
-  color: #D0D0D0;
+  color: #868686;
   font-size: 13px;
   display: block;
   padding: 8px 0px;
 }
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li>ul li a:hover {
-  color: #ffffff;
+  color: #cacaca;
   text-decoration: underline;
 }
 
