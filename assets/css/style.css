@@ -4095,7 +4095,7 @@ textarea:focus {
 
 .main-menu>nav>ul>li>ul.sub-menu-width li {
   display: block;
-  padding: 0 15px 14px 30px;
+  padding: 0 15px 15px 15px;
   position: relative;
   text-align: left;
 }
@@ -4126,8 +4126,8 @@ textarea:focus {
 }
 
 .main-menu>nav>ul>li>ul.sub-menu-width li ul.lavel-menu {
-  padding: 36px 0px 40px;
-  width: 220px;
+  padding: 35px 0px 40px;
+  width: auto;
   -webkit-transition: all 250ms ease-out;
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
@@ -4135,7 +4135,7 @@ textarea:focus {
   box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.09);
   background-color: #262626;
   position: absolute;
-  top: -17px;
+  top: -15px;
   left: 100%;
   margin: 0;
   visibility: hidden;

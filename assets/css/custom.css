@@ -66,6 +66,9 @@
     top: 42%;
     left: 17%;
   }
+  .ppb-product-wrap .ppb-gnxt-pro-title h1{
+    font-size: 65px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
