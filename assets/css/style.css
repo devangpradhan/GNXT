@@ -5529,7 +5529,7 @@ textarea:focus {
 
 .search-style-1 form .form-search-1 input {
   background-color: transparent;
-  width: 450px;
+  width: 250px;
   font-weight: 300;
   color: #B3B5C2;
   border: none;
@@ -5540,13 +5540,13 @@ textarea:focus {
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .search-style-1 form .form-search-1 input {
-    width: 350px;
+    width: 150px;
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .search-style-1 form .form-search-1 input {
-    width: 280px;
+    width: 80px;
   }
 }
 
@@ -5927,7 +5927,7 @@ textarea:focus {
 
 .main-menu-2>nav>ul>li>ul.sub-menu-width {
   width: 220px;
-  padding: 39px 0 43px;
+  padding: 35px 0 35px;
 }
 
 .main-menu-2>nav>ul>li>ul.sub-menu-width li {
