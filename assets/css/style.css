@@ -3720,6 +3720,7 @@ textarea:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top:25px;
 }
 
 .header-action-wrap.header-action-flex-center {
@@ -3735,25 +3736,45 @@ textarea:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  
 }
 
 .header-action-wrap.header-action-mrg-1 .same-style {
-  margin-left: 55px;
+  margin-left: 30px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .header-action-wrap.header-action-flex{
+    padding-right:38px;
+  }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-action-wrap.header-action-mrg-1 .same-style {
+    margin-left: 20px;
+  }
+  .header-action-wrap.header-action-flex{
+    padding-right:25px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-action-wrap.header-action-mrg-1 .same-style {
+    margin-left: 20px;
+  }
+ 
+}
 @media only screen and (max-width: 767px) {
   .header-action-wrap.header-action-mrg-1 .same-style {
-    margin-left: 35px;
+    margin-left: 15px;
   }
 }
 
 .header-action-wrap.header-action-mrg-2 .same-style {
-  margin-left: 35px;
+  margin-left: 15px;
 }
 
 @media only screen and (max-width: 767px) {
   .header-action-wrap.header-action-mrg-2 .same-style {
-    margin-left: 35px;
+    margin-left: 30px;
   }
 }
 
@@ -3769,6 +3790,14 @@ textarea:focus {
   font-size: 20px;
   color: #0A1039;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header-action-wrap .same-style a {
+    font-size: 12px;
+  }
+}
+
+
 
 .header-action-wrap .same-style a:hover {
   color: #444E7A;
@@ -4068,11 +4097,17 @@ textarea:focus {
   .main-menu>nav>ul>li>ul {
     left: -10px;
   }
+  .main-menu>nav>ul>li>a {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu>nav>ul>li>ul {
     left: -40px;
+  }
+  .main-menu>nav>ul>li>a {
+    font-size: 12px;
   }
 }
 
@@ -4121,7 +4156,7 @@ textarea:focus {
 }
 
 .main-menu>nav>ul>li>ul.sub-menu-width li a:hover {
-  color: #cacaca;
+  color: #494949;
   text-decoration: underline;
 }
 
@@ -4342,7 +4377,7 @@ textarea:focus {
 }
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li>ul li a:hover {
-  color: #cacaca;
+  color: #494949;
   text-decoration: underline;
 }
 
@@ -4432,7 +4467,12 @@ textarea:focus {
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .main-menu.main-menu-padding-1>nav>ul>li {
-    padding: 0 20px 0 0;
+    padding: 0 15px 0 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .main-menu.main-menu-padding-1>nav>ul>li {
+    padding: 0 10px 0 0;
   }
 }
 
@@ -4476,10 +4516,6 @@ textarea:focus {
   .main-menu.menu-mrg-2 {
     margin-right: 20px;
   }
-}
-
-.main-menu.menu-mrg-3 {
-  margin-right: 35px;
 }
 
 .categories-dropdown .nice-select-style-1 {
@@ -5082,7 +5118,7 @@ textarea:focus {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   visibility: hidden;
-  width: 340px;
+  width: 250px;
   z-index: -99;
   padding-bottom: 1px;
   margin-right: 10px;
@@ -5529,7 +5565,7 @@ textarea:focus {
 
 .search-style-1 form .form-search-1 input {
   background-color: transparent;
-  width: 250px;
+  width: 350px;
   font-weight: 300;
   color: #B3B5C2;
   border: none;
@@ -5540,13 +5576,13 @@ textarea:focus {
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .search-style-1 form .form-search-1 input {
-    width: 150px;
+    width: 250px;
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .search-style-1 form .form-search-1 input {
-    width: 80px;
+    width: 180px;
   }
 }
 
@@ -5859,6 +5895,7 @@ textarea:focus {
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .main-menu-2>nav>ul>li {
     padding-bottom: 25px;
+    font-size: 14px;
   }
 }
 
