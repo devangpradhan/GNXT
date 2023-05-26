@@ -101,13 +101,13 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ppb-product-wrap .ppb-gnxt-pro-title h1{
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .ppb-product-wrap .ppb-gnxt-pro-title h1{
-    font-size: 35px;
+    font-size: 60px;
   }
 }
 
