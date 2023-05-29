@@ -4113,7 +4113,7 @@ textarea:focus {
 
 .main-menu>nav>ul>li>ul.sub-menu-width {
   width: 220px;
-  padding: 39px 0 43px;
+  padding: 10px 0 43px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -4127,6 +4127,7 @@ textarea:focus {
     width: 180px;
   }
 }
+
 
 .main-menu>nav>ul>li>ul.sub-menu-width li {
   display: block;
@@ -4329,21 +4330,21 @@ textarea:focus {
   display: block;
 }
 
-.main-menu>nav>ul>li>ul.mega-menu-style-1>li.mega-menu-sub-width33 {
-  width: 33.333%;
+.main-menu>nav>ul>li>ul.mega-menu-style-1>li.mega-menu-sub-width20 {
+  width: 20%;
 }
-
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li.mega-menu-sub-width25 {
   width: 25%;
 }
 
-.main-menu>nav>ul>li>ul.mega-menu-style-1>li.mega-menu-sub-width20 {
-  width: 20%;
+.main-menu>nav>ul>li>ul.mega-menu-style-1>li.mega-menu-sub-width33 {
+  width: 33.333%;
 }
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li.mega-menu-sub-width40 {
   width: 40%;
 }
+
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li a.menu-title {
   color: #8f8f8f;
@@ -7595,7 +7596,7 @@ textarea:focus {
 
 .slider-mt-7,
 .breadcrumb-mt {
-  margin-top: 102px;
+  margin-top: 125px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -29415,7 +29416,7 @@ textarea:focus {
 }
 
 .breadcrumb-ptb-2 {
-  padding: 113px 0 110px;
+  padding: 120px 0 110px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -29424,8 +29425,27 @@ textarea:focus {
   }
 }
 
+.breadcrumb-ptb-3 {
+  padding: 25px 50px 25px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-ptb-3 {
+    padding: 103px 0 118px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb-ptb-3 {
+    padding: 60px 0 60px;
+  }
+}
+
+
+
 .breadcrumb-area {
   position: relative;
+  background: #E8E8E8;
 }
 
 .breadcrumb-area .breadcrumb-img-1 {
@@ -29544,7 +29564,7 @@ textarea:focus {
 }
 
 .breadcrumb-content ul {
-  margin: 25px 0 0;
+  /* margin: 25px 0 0; */
 }
 
 @media only screen and (max-width: 767px) {
@@ -29558,7 +29578,7 @@ textarea:focus {
   margin: 0 1px;
   text-transform: capitalize;
   color: #777777;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .breadcrumb-content ul li.active {
