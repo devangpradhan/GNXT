@@ -4321,6 +4321,7 @@ textarea:focus {
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1 {
   padding: 40px 10px 33px 40px;
+
 }
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li {
@@ -4345,7 +4346,6 @@ textarea:focus {
   width: 40%;
 }
 
-
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li a.menu-title {
   color: #8f8f8f;
   font-size: 14px;
@@ -4364,6 +4364,8 @@ textarea:focus {
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li>ul {
   margin: 28px 0 0;
+  border-right: 1px solid #8E8FA0;
+  padding-right: 10px;
 }
 
 .main-menu>nav>ul>li>ul.mega-menu-style-1>li>ul li {
@@ -24724,8 +24726,8 @@ textarea:focus {
   }
 }
 
-.product-details-content h2 {
-  font-size: 29px;
+.product-details-content h4 {
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
@@ -24829,8 +24831,8 @@ textarea:focus {
 }
 
 .product-details-content p.pro-dec-paragraph-2 {
-  width: 65%;
-  margin: 15px 0 0;
+  width: 85%;
+  margin: 0 0 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
