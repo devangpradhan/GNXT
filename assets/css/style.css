@@ -4113,7 +4113,7 @@ textarea:focus {
 
 .main-menu>nav>ul>li>ul.sub-menu-width {
   width: 220px;
-  padding: 10px 0 43px;
+  padding: 10px 0 10px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -26102,7 +26102,7 @@ textarea:focus {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 95px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -26790,7 +26790,7 @@ textarea:focus {
   }
 
   .product-details-area.pt-50 {
-    padding-top: 0;
+    padding-top: 10px;
   }
 
   .product-details-area.pt-120 {
@@ -28570,7 +28570,7 @@ textarea:focus {
 }
 
 .sidebar-widget-categori ul li {
-  margin-bottom: 37px;
+  margin-bottom: 10px;
 }
 
 .sidebar-widget-categori ul li:last-child {
@@ -28581,7 +28581,7 @@ textarea:focus {
   color: #777777;
   font-size: 16px;
   display: block;
-  padding-left: 36px;
+  padding-left: 10px;
   position: relative;
 }
 
@@ -28593,7 +28593,7 @@ textarea:focus {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 5px;
+  width: 2px;
   height: 0px;
   z-index: 9;
   background-color: #333333;
@@ -28610,7 +28610,7 @@ textarea:focus {
 }
 
 .sidebar-widget-categori ul li a.active:before {
-  height: 45px;
+  height: 15px;
   opacity: 1;
   visibility: visible;
 }
@@ -28621,7 +28621,7 @@ textarea:focus {
 }
 
 .sidebar-widget-categori ul li a:hover:before {
-  height: 45px;
+  height: 10px;
   opacity: 1;
   visibility: visible;
 }
@@ -29426,12 +29426,12 @@ textarea:focus {
 }
 
 .breadcrumb-ptb-3 {
-  padding: 25px 50px 25px;
+  padding: 10px 50px 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breadcrumb-ptb-3 {
-    padding: 103px 0 118px;
+    padding: 15px 50px 15px;
   }
 }
 
@@ -29445,7 +29445,7 @@ textarea:focus {
 
 .breadcrumb-area {
   position: relative;
-  background: #E8E8E8;
+  /* background: #E8E8E8; */
 }
 
 .breadcrumb-area .breadcrumb-img-1 {
@@ -29515,10 +29515,17 @@ textarea:focus {
   z-index: 9;
 }
 
+.breadcrumb-content ul li {
+  position: relative;
+  z-index: 9;
+  /* border-bottom: gray solid 1px; */
+}
+
 .breadcrumb-content h2 {
   font-size: 29px;
   font-weight: bold;
   margin: 0 0 16px;
+
 }
 
 @media only screen and (max-width: 767px) {

@@ -1,6 +1,6 @@
 .vjs-theme-forest {
-    --vjs-theme-forest--primary: #6fb04e;
-    --vjs-theme-forest--secondary: #fff;
+    --vjs-theme-forest--primary: #231F20;
+    --vjs-theme-forest--secondary: #f8f8f8;
 }
 .vjs-theme-forest.vjs-big-play-button:focus,
 .vjs-theme-forest:hover .vjs-big-play-button {
