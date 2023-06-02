@@ -3787,7 +3787,7 @@ textarea:focus {
 }
 
 .header-action-wrap .same-style a {
-  font-size: 20px;
+  font-size: 16px;
   color: #707072;
 }
 
@@ -4068,7 +4068,7 @@ textarea:focus {
 }
 
 .main-menu>nav>ul>li>a {
-  font-size: 16px;
+  font-size: 14px;
   color: #060A27;
   display: inline-block;
 }
@@ -5124,7 +5124,7 @@ textarea:focus {
   width: 250px;
   z-index: -99;
   padding-bottom: 1px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .search-wrap-3 form {
@@ -5136,8 +5136,9 @@ textarea:focus {
   background-color: #fff;
   border: 1px solid #E2DCDC;
   color: #707072;
+  height: 35px;
   line-height: 30px;
-  padding: 2px 60px 2px 20px;
+  padding: 2px 60px 2px 10px;
   width: 100%;
 }
 
@@ -5172,6 +5173,7 @@ textarea:focus {
   visibility: visible;
   z-index: 99;
 }
+
 
 .clickalbe-sidebar-wrapper-style-1 {
   position: fixed;
@@ -29471,7 +29473,7 @@ textarea:focus {
 }
 
 .breadcrumb-ptb-2 {
-  padding: 120px 0 110px;
+  padding: 50px 0 50px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -29500,7 +29502,7 @@ textarea:focus {
 
 .breadcrumb-area {
   position: relative;
-  /* background: #E8E8E8; */
+  background: #E8E8E8;
 }
 
 .breadcrumb-area .breadcrumb-img-1 {

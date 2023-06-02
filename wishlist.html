@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>GNXT - Login</title>
+    <title>GNXT - Wishlist</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -403,8 +403,8 @@
         </div>
         <div class="breadcrumb-area breadcrumb-mt breadcrumb-ptb-2">
             <div class="container">
-                <div class="breadcrumb-content text-center">
-                    <h2>Login / Register</h2>
+                <div class="breadcrumb-content">
+                    <h2>Wishlist</h2>
                     <ul>
                         <li>
                             <a href="index.html">Home </a>
@@ -414,61 +414,104 @@
                             <a href="index.html">Product </a>
                         </li>
                         <li><span> > </span></li>
-                        <li class="active"> Login / Register </li>
+                        <li class="active"> Wishlist </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="login-register-area bg-gray pt-155 pb-160">
+        <div class="cart-area bg-gray pt-160 pb-160">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12 ml-auto mr-auto">
-                        <div class="login-register-wrapper">
-                            <div class="login-register-tab-list nav">
-                                <a class="active" data-toggle="tab" href="#lg1">
-                                    <h4> login </h4>
-                                </a>
-                                <a data-toggle="tab" href="#lg2">
-                                    <h4> register </h4>
-                                </a>
-                            </div>
-                            <div class="tab-content">
-                                <div id="lg1" class="tab-pane active">
-                                    <div class="login-form-container">
-                                        <div class="login-register-form">
-                                            <form action="#" method="post">
-                                                <input type="text" name="user-name" placeholder="Username">
-                                                <input type="password" name="user-password" placeholder="Password">
-                                                <div class="button-box">
-                                                    <div class="login-toggle-btn">
-                                                        <input type="checkbox">
-                                                        <label>Remember me</label>
-                                                        <a href="#">Forgot Password?</a>
-                                                    </div>
-                                                    <button type="submit">Login</button>
+                <form action="#">
+                    <div class="cart-table-content wishlist-wrap">
+                        <div class="table-content table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th class="th-text-center"> Price</th>
+                                        <th class="th-text-center">Quantity</th>
+                                        <th class="th-text-center">Total Prce</th>
+                                        <th class="th-text-center">Add To Cart</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cart-product">
+                                            <div class="product-img-info-wrap">
+                                                <div class="product-img">
+                                                    <a href="#"><img src="assets/images/cart/cart-1.jpg" alt=""></a>
                                                 </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="lg2" class="tab-pane">
-                                    <div class="login-form-container">
-                                        <div class="login-register-form">
-                                            <form action="#" method="post">
-                                                <input type="text" name="user-name" placeholder="Username">
-                                                <input type="password" name="user-password" placeholder="Password">
-                                                <input name="user-email" placeholder="Email" type="email">
-                                                <div class="button-box">
-                                                    <button type="submit">Register</button>
+                                                <div class="product-info">
+                                                    <h4><a href="#">Demo Product Title</a></h4>
+                                                    <span>Color :  Black</span>
+                                                    <span>Size :     SL</span>
                                                 </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-price"><span class="amount">$56.00</span></td>
+                                        <td class="cart-quality">
+                                            <div class="pro-details-quality">
+                                                <div class="cart-plus-minus">
+                                                    <input class="cart-plus-minus-box plus-minus-width-inc" type="text" name="qtybutton" value="02">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-total"><span>$112.00</span></td>
+                                        <td class="product-wishlist-cart"><a href="#">Add To Cart</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cart-product">
+                                            <div class="product-img-info-wrap">
+                                                <div class="product-img">
+                                                    <a href="#"><img src="assets/images/cart/cart-2.jpg" alt=""></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h4><a href="#">Demo Product Title</a></h4>
+                                                    <span>Color :  Black</span>
+                                                    <span>Size :     SL</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-price"><span class="amount">$56.00</span></td>
+                                        <td class="cart-quality">
+                                            <div class="pro-details-quality">
+                                                <div class="cart-plus-minus">
+                                                    <input class="cart-plus-minus-box plus-minus-width-inc" type="text" name="qtybutton" value="02">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-total"><span>$112.00</span></td>
+                                        <td class="product-wishlist-cart"><a href="#">Add To Cart</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cart-product">
+                                            <div class="product-img-info-wrap">
+                                                <div class="product-img">
+                                                    <a href="#"><img src="assets/images/cart/cart-1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h4><a href="#">Demo Product Title</a></h4>
+                                                    <span>Color :  Black</span>
+                                                    <span>Size :     SL</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-price"><span class="amount">$56.00</span></td>
+                                        <td class="cart-quality">
+                                            <div class="pro-details-quality">
+                                                <div class="cart-plus-minus">
+                                                    <input class="cart-plus-minus-box plus-minus-width-inc" type="text" name="qtybutton" value="02">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-total"><span>$112.00</span></td>
+                                        <td class="product-wishlist-cart"><a href="#">Add To Cart</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <footer class="footer-area pt-160">
