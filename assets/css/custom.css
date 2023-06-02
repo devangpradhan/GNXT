@@ -711,4 +711,43 @@
   color: #494949;
   text-decoration: underline;
 }
-/*nav animation */
+/*Login Menu */
+
+
+.profile ul li {
+  height: 3rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.sub-item  {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.725rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+
+.sub-item:hover {
+  background-color: rgba(232, 232, 232, 0.4);
+}
+
+.sub-item:hover .material-icons-outlined {
+  color: #ff9800;
+  transform: scale(1.08) translateY(-2px);
+  cursor: pointer;
+}
+
+.sub-item:hover p {
+  color: #000;
+  cursor: pointer;
+}
+
+.sub-item p {
+  font-size: 0.85rem;
+  color: #888888;
+  font-weight: 500;
+  margin: 0.4rem 0;
+  flex: 1;
+}

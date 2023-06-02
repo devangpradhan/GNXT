@@ -26180,7 +26180,8 @@ textarea:focus {
 .product-dec-left {
   width: 85%;
   float: left;
-  padding-right: 26px;
+  padding-left: 26px;
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -26210,7 +26211,7 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .product-dec-right {
-    width: 25%;
+    width: 20%;
   }
 }
 

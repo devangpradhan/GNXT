@@ -1201,7 +1201,7 @@
         Product details 2 slick carousel as Nav
     --------------------------------------------*/
     $('.product-dec-slider-2').slick({
-        slidesToShow: 7,
+        slidesToShow: 4,
         slidesToScroll: 1,
         vertical: true,
         asNavFor: '.pro-dec-big-img-slider-2',
@@ -1213,21 +1213,21 @@
             {
                 breakpoint: 1199,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 7,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 }
             },
@@ -1235,7 +1235,7 @@
                 breakpoint: 575,
                 settings: {
                     autoplay: true,
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             }
         ]
