@@ -86,11 +86,25 @@
                                                 <li><a href="#">Floor Light</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="automation.html">HOME AUTOMATION</a>
-                                            <ul class="sub-menu-width">
-                                                <li><a href="#">KNX</a></li>
-                                                <li><a href="#">GMESH</a></li>
-                                                <li><a href="#">VDP</a></li>
+                                        <li class="iconmenu"><a href="automation.html">HOME AUTOMATION</a>
+                                            <ul class="sub-menu-fullwidth">
+                                                <li><img src="/assets/images/fill-icon.png">
+                                                    <a href="#">Wall Light</a>
+                                                </li>
+                                                <li><img src="/assets/images/fill-icon.png"><a href="#">Spike Light</a>
+                                                </li>
+                                                <li><img src="/assets/images/fill-icon.png"><a href="#">Gate Light</a>
+                                                </li>
+                                                <li><img src="/assets/images/fill-icon.png"><a href="#">Bollard
+                                                        Light</a></li>
+                                                <li><img src="/assets/images/fill-icon.png"><a href="#">Spot Light</a>
+                                                </li>
+                                                <li><img src="/assets/images/fill-icon.png"><a href="#">Street Light</a>
+                                                </li>
+                                                <li><img src="/assets/images/fill-icon.png"><a href="#">Ceiling
+                                                        Light</a></li>
+                                                <li><img src="/assets/images/fill-icon.png"><a href="#">Post Top
+                                                        Light</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">PROJECTS</a>
@@ -151,6 +165,7 @@
                     </div>
                     <div class="col-md">
                         <div class="header-action-wrap header-action-flex header-action-mrg-1">
+                            <!-- Search Action -->
                             <div class="same-style header-search-3">
                                 <a class="search-toggle" href="#">
                                     <i class="icofont-search-1 s-open"></i>
@@ -163,11 +178,76 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="same-style header-cart">
-                                <a class="cart-active" href="#"><i class="icofont-shopping-cart"></i></a>
+                            <div class="same-style header-profile">
+                                <ul class="list-unstyled">
+                                    <li class="dropdown ml-2">
+                                        <a class="rounded-circle " href="#" role="button" id="dropdownUser"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a><i class="icofont-user-alt-3"></i></a>
+                                        </a>
+                                        <div class="dropdown-menu pb-2" aria-labelledby="dropdownUser">
+                                            <div class="dropdown-item">
+                                                <div class="d-flex py-2">
+                                                    <div class="avatar avatar-md avatar-indicators avatar-online">
+                                                        <img alt="avatar" src="https://via.placeholder.com/40x40"
+                                                            class="rounded-circle">
+                                                    </div>
+                                                    <div class="ml-3 lh-1">
+                                                        <h5 class="mb-0">User Name</h5>
+                                                        <p class="mb-0">user@email.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex py-2">
+                                                    <i class="icofont-login"></i>
+                                                    <div class="ml-3 lh-1">
+                                                        <h5 class="mb-0">New Customer ?</h5>
+                                                        <p class="mb-0">Create An Account</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href=""><span class="mr-1"><i
+                                                                    class="icofont-user"></i></span>Profile</a></li>
+                                                    <li><a class="dropdown-item" href=""><span class="mr-2"><i
+                                                                    class="icofont-basket"></i></span>Orders</a></li>
+                                                    <li><a class="dropdown-item" href=""><span class="mr-2"><i
+                                                                    class="icofont-support-faq"></i></span>Help</a></li>
+                                                    <li><a class="dropdown-item" href=""><span class="mr-2"><i
+                                                                    class="icofont-notification"></i></span>Notification</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href=""><span class="mr-2"><i
+                                                                    class="icofont-ui-settings"></i></span>Settings</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a class="dropdown-item" href="">
+                                                        <span class="mr-2">
+                                                            <i class="icofont-logout"></i>
+                                                        </span>Sign Out</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="same-style header-search">
-                                <a href="login-register.html"><i class="icofont-user-alt-3"></i></a>
+                            <!-- Cart Action -->
+                            <div class="same-style header-wishlist">
+                                <a class="wishlist-active" href="wishlist.html">
+                                    <i class="icofont-heart"></i>
+                                </a>
+                            </div>
+                            <!-- Cart Action -->
+                            <div class="same-style header-cart">
+                                <a class="cart-active" href="#">
+                                    <i class="icofont-shopping-cart"></i>
+                                    <sup class="cart-count">02</sup>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -549,8 +629,118 @@
     </div>
     <!-- Product Area -->
 
-    <div class="shop-area breadcrumb-mt section-padding-10 pb-50">
+    <div class="shop-area section-padding-10 pb-50 pt-50">
         <div class="container-fluid">
+            <div class="shop-top-bar pb-10">
+                <div class="shop-top-bar-left">
+                    <div class="shop-filter">
+                        <a class="shop-filter-active" href="#">Filters</a>
+                    </div>
+                </div>
+                <div class="shop-top-bar-right">
+                    <div class="shortby-dropdown">
+                        <select class="short-select short-select-style-1 short-select-drop">
+                            <option>Short By</option>
+                            <option>Name (A - Z)</option>
+                            <option>Name (Z - A)</option>
+                            <option>Price (Low &gt; High)</option>
+                            <option>Price (High &gt; Low</option>
+                            <option>Rating (Highest)</option>
+                            <option>Rating (Lowest)</option>
+                            <option>Model (A - Z)</option>
+                            <option>Model (Z - A)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="product-filter-wrapper">
+                <div class="row">
+                    <div class="custom-col-5-2">
+                        <div class="sidebar-widget-3 mb-50">
+                            <h4 class="pro-sidebar-title-3">Subcategories</h4>
+                            <div class="sidebar-widget-categori-3 mt-45">
+                                <ul>
+                                    <li><a class="active" href="#">All ,</a> </li>
+                                    <li><a href="#">Shoes ,</a> </li>
+                                    <li><a href="#">Watches ,</a> </li>
+                                    <li><a href="#">Jewelry ,</a> </li>
+                                    <li><a href="#">Accessories ,</a> </li>
+                                    <li><a href="#"> Big & Tall </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5-2">
+                        <div class="sidebar-widget mb-50">
+                            <h4 class="pro-sidebar-title">Filter By Color</h4>
+                            <div class="pro-details-color-content sidebar-widget-color color-mrg-2 mt-45">
+                                <ul>
+                                    <li><a class="white" href="#">Black</a></li>
+                                    <li><a class="azalea" href="#">Blue</a></li>
+                                    <li><a class="dolly" href="#">Green</a></li>
+                                    <li><a class="peach-orange" href="#">Orange</a></li>
+                                    <li><a class="mona-lisa active" href="#">Pink</a></li>
+                                    <li><a class="cupid" href="#">gray</a></li>
+                                    <li><a class="one" href="#">one</a></li>
+                                    <li><a class="two" href="#">two</a></li>
+                                    <li><a class="three" href="#">three</a></li>
+                                    <li><a class="four" href="#">four</a></li>
+                                    <li><a class="five" href="#">five</a></li>
+                                    <li><a class="six" href="#">six</a></li>
+                                    <li><a class="seven" href="#">seven</a></li>
+                                    <li><a class="eight" href="#">eight</a></li>
+                                    <li><a class="nine" href="#">nine</a></li>
+                                    <li><a class="ten" href="#">ten</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5-2">
+                        <div class="sidebar-widget mb-50">
+                            <h4 class="pro-sidebar-title">Filter By Size</h4>
+                            <div class="sidebar-widget-size size-mrg-none widget-filter-size mt-45">
+                                <ul>
+                                    <li><a href="#">XS</a> </li>
+                                    <li><a href="#">S</a> </li>
+                                    <li><a href="#">M</a> </li>
+                                    <li><a href="#">L</a> </li>
+                                    <li><a href="#">XL</a> </li>
+                                    <li><a href="#">XXL</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5-2">
+                        <div class="sidebar-widget mb-50">
+                            <h4 class="pro-sidebar-title">Filter By Price Range</h4>
+                            <div class="price-filter price-mrg-none mt-45">
+                                <div id="slider-range"></div>
+                                <div class="price-slider-amount">
+                                    <div class="label-input">
+                                        <span>Price: </span><input type="text" id="amount" name="price"
+                                            placeholder="Add Your Price" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5-2">
+                        <div class="sidebar-widget mb-50">
+                            <h4 class="pro-sidebar-title">Filter By Brand</h4>
+                            <div class="sidebar-widget-brand-logo brand-logo-mrg-none mt-45">
+                                <ul>
+                                    <li><a href="#"><img src="assets/images/brand-logo/brand-logo-1.png" alt=""></a>
+                                    </li>
+                                    <li><a href="#"><img src="assets/images/brand-logo/brand-logo-2.png" alt=""></a>
+                                    </li>
+                                    <li><a href="#"><img src="assets/images/brand-logo/brand-logo-3.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row flex-row-reverse">
                 <div class="col-xl-12 col-lg-12">
                     <div class="shop-wrap-5">
@@ -1003,117 +1193,120 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Product -->
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close"><span aria-hidden="true">x</span></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-lg-5 col-md-5 col-12 col-sm-6">
-                                                        <div class="quickview-img">
-                                                            <img src="assets/images/product/product-01.jpg" alt="">
-                                                        </div>
+                            </div>
+                            <div class="pro-pagination-style text-center pt-50 pb-50">
+                                <div class="btn-style-4">
+                                    <a class="btn-ptb-1" href="">See More</a>
+                                </div>
+                            </div>
+                            <!-- End Product -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span aria-hidden="true">x</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-5 col-md-5 col-12 col-sm-6">
+                                                    <div class="quickview-img">
+                                                        <img src="assets/images/product/product-01.jpg" alt="">
                                                     </div>
-                                                    <div class="col-lg-7 col-md-7 col-12 col-sm-6">
-                                                        <div class="product-details-content quickview-content">
-                                                            <h2>Electronic Shop</h2>
-                                                            <div class="product-ratting-review-wrap">
-                                                                <div class="product-ratting-digit-wrap">
-                                                                    <div class="product-ratting">
-                                                                        <i class="icon-rating"></i>
-                                                                        <i class="icon-rating"></i>
-                                                                        <i class="icon-rating"></i>
-                                                                        <i class="icon-rating"></i>
-                                                                        <i class="icon-star-empty"></i>
-                                                                    </div>
-                                                                    <div class="product-digit">
-                                                                        <span>4.0</span>
-                                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7 col-md-7 col-12 col-sm-6">
+                                                    <div class="product-details-content quickview-content">
+                                                        <h2>Electronic Shop</h2>
+                                                        <div class="product-ratting-review-wrap">
+                                                            <div class="product-ratting-digit-wrap">
+                                                                <div class="product-ratting">
+                                                                    <i class="icon-rating"></i>
+                                                                    <i class="icon-rating"></i>
+                                                                    <i class="icon-rating"></i>
+                                                                    <i class="icon-rating"></i>
+                                                                    <i class="icon-star-empty"></i>
                                                                 </div>
-                                                                <div class="product-review-order">
-                                                                    <span>62 Reviews</span>
-                                                                    <span>242 orders</span>
+                                                                <div class="product-digit">
+                                                                    <span>4.0</span>
                                                                 </div>
                                                             </div>
-                                                            <p>Seamlessly predominate enterprise metrics without
-                                                                performance based process
-                                                                improvements.</p>
-                                                            <div class="pro-details-price">
-                                                                <span>US ₹ 75.72</span>
-                                                                <span class="old-price">US ₹ 95.72</span>
+                                                            <div class="product-review-order">
+                                                                <span>62 Reviews</span>
+                                                                <span>242 orders</span>
                                                             </div>
-                                                            <div class="pro-details-color-wrap">
-                                                                <span>Color:</span>
-                                                                <div class="pro-details-color-content">
-                                                                    <ul>
-                                                                        <li><a class="white" href="#">Black</a></li>
-                                                                        <li><a class="azalea" href="#">Blue</a></li>
-                                                                        <li><a class="dolly" href="#">Green</a></li>
-                                                                        <li><a class="peach-orange" href="#">Orange</a>
-                                                                        </li>
-                                                                        <li><a class="mona-lisa active"
-                                                                                href="#">Pink</a></li>
-                                                                        <li><a class="cupid" href="#">gray</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="pro-details-size">
-                                                                <span>Size:</span>
-                                                                <div class="pro-details-size-content">
-                                                                    <ul>
-                                                                        <li><a href="#">XS</a></li>
-                                                                        <li><a href="#">S</a></li>
-                                                                        <li><a href="#">M</a></li>
-                                                                        <li><a href="#">L</a></li>
-                                                                        <li><a href="#">XL</a></li>
-                                                                        <li><a href="#">XXL</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="pro-details-quality">
-                                                                <span>Quantity:</span>
-                                                                <div class="cart-plus-minus">
-                                                                    <input class="cart-plus-minus-box" type="text"
-                                                                        name="qtybutton" value="1">
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-details-meta">
+                                                        </div>
+                                                        <p>Seamlessly predominate enterprise metrics without
+                                                            performance based process
+                                                            improvements.</p>
+                                                        <div class="pro-details-price">
+                                                            <span>US ₹ 75.72</span>
+                                                            <span class="old-price">US ₹ 95.72</span>
+                                                        </div>
+                                                        <div class="pro-details-color-wrap">
+                                                            <span>Color:</span>
+                                                            <div class="pro-details-color-content">
                                                                 <ul>
-                                                                    <li><span>Model:</span> <a href="#">Odsy-1000</a>
+                                                                    <li><a class="white" href="#">Black</a></li>
+                                                                    <li><a class="azalea" href="#">Blue</a></li>
+                                                                    <li><a class="dolly" href="#">Green</a></li>
+                                                                    <li><a class="peach-orange" href="#">Orange</a>
                                                                     </li>
-                                                                    <li><span>Ship To</span> <a href="#">2834 Laurel
-                                                                            Lane</a>, <a href="#">Mentone</a> , <a
-                                                                            href="#">Texas</a></li>
+                                                                    <li><a class="mona-lisa active" href="#">Pink</a>
+                                                                    </li>
+                                                                    <li><a class="cupid" href="#">gray</a></li>
                                                                 </ul>
                                                             </div>
-                                                            <div class="pro-details-action-wrap">
-                                                                <div class="pro-details-buy-now">
-                                                                    <a href="#">Buy Now</a>
-                                                                </div>
-                                                                <div class="pro-details-action">
-                                                                    <a title="Add to Cart" href="#"><i
-                                                                            class="icon-basket"></i></a>
-                                                                    <a title="Add to Wishlist" href="#"><i
-                                                                            class="icon-heart"></i></a>
-                                                                    <a class="social" title="Social" href="#"><i
-                                                                            class="icon-share"></i></a>
-                                                                    <div class="product-dec-social">
-                                                                        <a class="facebook" title="Facebook" href="#"><i
-                                                                                class="icon-social-facebook-square"></i></a>
-                                                                        <a class="twitter" title="Twitter" href="#"><i
-                                                                                class="icon-social-twitter"></i></a>
-                                                                        <a class="instagram" title="Instagram"
-                                                                            href="#"><i
-                                                                                class="icon-social-instagram"></i></a>
-                                                                        <a class="pinterest" title="Pinterest"
-                                                                            href="#"><i
-                                                                                class="icon-social-pinterest"></i></a>
-                                                                    </div>
+                                                        </div>
+                                                        <div class="pro-details-size">
+                                                            <span>Size:</span>
+                                                            <div class="pro-details-size-content">
+                                                                <ul>
+                                                                    <li><a href="#">XS</a></li>
+                                                                    <li><a href="#">S</a></li>
+                                                                    <li><a href="#">M</a></li>
+                                                                    <li><a href="#">L</a></li>
+                                                                    <li><a href="#">XL</a></li>
+                                                                    <li><a href="#">XXL</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pro-details-quality">
+                                                            <span>Quantity:</span>
+                                                            <div class="cart-plus-minus">
+                                                                <input class="cart-plus-minus-box" type="text"
+                                                                    name="qtybutton" value="1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-details-meta">
+                                                            <ul>
+                                                                <li><span>Model:</span> <a href="#">Odsy-1000</a>
+                                                                </li>
+                                                                <li><span>Ship To</span> <a href="#">2834 Laurel
+                                                                        Lane</a>, <a href="#">Mentone</a> , <a
+                                                                        href="#">Texas</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="pro-details-action-wrap">
+                                                            <div class="pro-details-buy-now">
+                                                                <a href="#">Buy Now</a>
+                                                            </div>
+                                                            <div class="pro-details-action">
+                                                                <a title="Add to Cart" href="#"><i
+                                                                        class="icon-basket"></i></a>
+                                                                <a title="Add to Wishlist" href="#"><i
+                                                                        class="icon-heart"></i></a>
+                                                                <a class="social" title="Social" href="#"><i
+                                                                        class="icon-share"></i></a>
+                                                                <div class="product-dec-social">
+                                                                    <a class="facebook" title="Facebook" href="#"><i
+                                                                            class="icon-social-facebook-square"></i></a>
+                                                                    <a class="twitter" title="Twitter" href="#"><i
+                                                                            class="icon-social-twitter"></i></a>
+                                                                    <a class="instagram" title="Instagram" href="#"><i
+                                                                            class="icon-social-instagram"></i></a>
+                                                                    <a class="pinterest" title="Pinterest" href="#"><i
+                                                                            class="icon-social-pinterest"></i></a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1123,13 +1316,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Modal end -->
                             </div>
+                            <!-- Modal end -->
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
