@@ -3740,7 +3740,7 @@ textarea:focus {
 }
 
 .header-action-wrap.header-action-mrg-1 .same-style {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .header-action-wrap.header-action-flex{
@@ -24718,7 +24718,7 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
   .product-details-content {
-    margin: 20px 0 0;
+    margin: 0px 0 0;
   }
 }
 
@@ -24729,14 +24729,14 @@ textarea:focus {
 }
 
 .product-details-content h4 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
 @media only screen and (max-width: 767px) {
   .product-details-content h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 

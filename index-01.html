@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
 </head>
-<div class="main-wrapper main-wrapper-3">
+<div class="main-wrapper main-wrapper-2 main-wrapper-3">
     <header class="header-area section-padding-1 header-ptb-3 transparent-bar">
         <div class="header-large-device">
             <div class="container-fluid">
@@ -166,7 +166,7 @@
                     <div class="col-md">
                         <div class="header-action-wrap header-action-flex header-action-mrg-1">
                             <!-- Search Action -->
-                            <div class="same-style header-search-3">
+                            <div class="same-style header-search-3" style="display: none;">
                                 <a class="search-toggle" href="#">
                                     <i class="icofont-search-1 s-open"></i>
                                     <i class="icofont-close-line s-close"></i>
@@ -178,6 +178,17 @@
                                     </form>
                                 </div>
                             </div>
+                            <div class="same-style header-search-4">
+                                <form method="get" class="search-form" action="#">
+                                    <label for="search-field"><span class="screen-reader-text">To search this site,
+                                            enter a search term</span></label>
+                                    <input class="search-field" id="search-field" type="text" name="s" value=""
+                                        aria-required="false" autocomplete="off" placeholder="Search&hellip;" />
+                                    <button class="search-submit"><span class="screen-reader-text">Search</span>
+                                        <i class="icofont-search-1"></i></button>
+                                </form>
+                            </div>
+
                             <div class="same-style header-profile">
                                 <ul class="list-unstyled">
                                     <li class="dropdown ml-2">
@@ -236,6 +247,7 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <!-- Cart Action -->
                             <div class="same-style header-wishlist">
                                 <a class="wishlist-active" href="wishlist.html">

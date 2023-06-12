@@ -696,7 +696,7 @@
            $(this).siblings('.search-wrap-3').addClass('open');
         }
     })
-    
+
     
      /*====== Sidebar Active ======*/
     function sidebarActive() {
