@@ -2954,6 +2954,46 @@ textarea:focus {
   }
 }
 
+.spf .container-fluid {
+  padding: 0 0px 0 200px;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+  .spf .container-fluid {
+    padding: 0 0px 0 55px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .spf .container-fluid {
+    padding: 0 0px 0 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .spf.container-fluid {
+    padding: 0 30px 0 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .spf .container-fluid {
+    padding: 0 40px 0 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .spf .container-fluid {
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .spf .container-fluid {
+    padding: 0 30px 0 30px;
+  }
+}
+
 .btn-hover a::before {
   content: "";
   position: absolute;
@@ -6309,6 +6349,7 @@ textarea:focus {
   text-decoration: underline;
 }
 
+
 /* User Menu */
 
 .dropdown-menu {
@@ -6400,8 +6441,20 @@ textarea:focus {
 }
 
 
-
-
+/* cartbage */
+.header-cart .cart-active .cart-count {
+  color: #98a6ab;
+  font-size: 10px;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  display: inline-block;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 50%;
+  right: 15px;
+  top: 18px;
+}
 
 
 
