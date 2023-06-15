@@ -6449,7 +6449,7 @@ textarea:focus {
   width: 15px;
   position: absolute;
   display: inline-block;
-  line-height: 15px;
+  line-height: 12px;
   text-align: center;
   border-radius: 50%;
   right: 15px;
@@ -21351,19 +21351,9 @@ textarea:focus {
   }
 }
 
-.section-title-8 h2 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 30px;
-  margin: 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .section-title-8 h2 {
-    font-size: 27px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+.section-title-8{
+  margin-left:0px;
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -21375,6 +21365,38 @@ textarea:focus {
     margin-bottom: 30px;
   }
 }
+
+.section-title-8 h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title-8 h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.section-title-8 h3 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title-8 h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 
 .section-title-9 h2 {
   font-size: 36px;
