@@ -1,8 +1,5 @@
 
 
-@import url("../css/vendor/fontawesome.css");
-
-
 /* icon toogle */
 
 .fa.fa-hover-hidden {
@@ -21,65 +18,3 @@
     display: inline-block;
 }
 
-
-/* Search wrap */
-#swarap {
-  margin: 50px 100px;
-  display: inline-block;
-  position: relative;
-  height: 60px;
-  float: right;
-  padding: 0;
-  position: relative;
-}
-
-
-
-.search-style-4 form .form-search-4 {
-  position: relative;
-}
-
-.search-style-4 form .form-search-4 input {
-  background-color: transparent;
-  width: 250px;
-  font-weight: 300;
-  color: #B3B5C2;
-  border: none;
-  height: 42px;
-  padding: 2px 40px 2px 0;
-  border-bottom: 1px solid #D9DFE6;
-}
-
-@media only screen and (min-width: 1366px) and (max-width: 1600px) {
-  .search-style-4 form .form-search-4 input {
-    width: 250px;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1365px) {
-  .search-style-4 form .form-search-4 input {
-    width: 180px;
-  }
-}
-
-.search-style-4 form .form-search-4 button {
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
-  border: none;
-  font-size: 20px;
-  color: #081348;
-  -webkit-transition: all .3s ease 0s;
-  -o-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
-  background-color: transparent;
-  
-}
-
-.search-style-4 form .form-search-4 button:hover {
-  color: #444E7A;
-}
