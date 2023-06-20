@@ -185,6 +185,7 @@
         loop: true,
         dots: true,
         arrows: false,
+        autoplay:true,
         prevArrow: '<span class="slider-icon slider-icon-prev"><i class="icofont-simple-left"></i></span>',
         nextArrow: '<span class="slider-icon slider-icon-next"><i class="icofont-simple-right"></i></span>',
     });

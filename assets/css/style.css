@@ -6312,7 +6312,7 @@ textarea:focus {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu > nav > ul > li > ul.sub-menu-fullwidth {
-    width: 180px;
+    width: 700px;
   }
 }
 
@@ -10952,14 +10952,20 @@ textarea:focus {
 }
 
 .dot-style-6-position-1 .slick-dots {
+
+  left: 50%;
+  bottom: 10px;
+  display: flex;
+  text-align: center;
   position: absolute;
-  left: 9%;
-  bottom: 46px;
+  justify-content: center;
+
+
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .dot-style-6-position-1 .slick-dots {
-    left: 7%;
+    left: 40%;
   }
 }
 
@@ -21452,7 +21458,7 @@ textarea:focus {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title-10 h2 {
-    font-size: 28px;
+    font-size: 35px;
     line-height: 40px;
   }
 }
