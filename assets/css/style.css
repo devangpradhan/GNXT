@@ -7002,43 +7002,42 @@ textarea:focus {
 }
 
 .slider-height-13 {
-  height: 673px;
+  height: 655px;
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .slider-height-13 {
-    height: 520px;
+    height: 450px;
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .slider-height-13 {
-    height: 473px;
+    height: 395px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-height-13 {
-    height: 413px;
+    height: 335px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-height-13 {
-    height: 500px;
+    height: 255px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .slider-height-13 {
-    height: 500px;
-    background-position: 70%;
+    height: 250px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-height-13 {
-    height: 400px;
+    height: 190px;
   }
 }
 
@@ -10952,15 +10951,12 @@ textarea:focus {
 }
 
 .dot-style-6-position-1 .slick-dots {
-
-  left: 50%;
-  bottom: 10px;
+  /* left: 50%; */
+  /* bottom: 10px; */
   display: flex;
   text-align: center;
-  position: absolute;
+  position: relative;
   justify-content: center;
-
-
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
@@ -14975,7 +14971,45 @@ textarea:focus {
   background: #000;
 }
 
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+  .banner-btn-01 {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  .banner-btn-01 a {
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+  }
+  .banner-wrap .banner-content-01 span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .banner-btn-01 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .banner-btn-01 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner-btn-01 {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .banner-btn-01 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+  .banner-wrap .banner-content-01 span {
+    font-size: 18px;
+  }
+
   .banner-wrap .banner-position-01 {
     left: 30px;
   }
@@ -14988,9 +15022,21 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-btn-01 {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .banner-btn-01 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+  
   .banner-wrap .banner-position-01 {
-    top: 65%;
-    left: 40px;
+    top: 75%;
+    left: 25px;
+  }
+  .banner-wrap .banner-content-01 span {
+    font-size: 14px;
   }
   .banner-wrap .banner-content-01 h2 {
     font-size: 20px;
@@ -15001,7 +15047,16 @@ textarea:focus {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .banner-btn-01 {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .banner-btn-01 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+  
   .banner-wrap .banner-position-01 {
     top: 65%;
     left: 20px;
@@ -15013,15 +15068,15 @@ textarea:focus {
     font-size: 30px;
     margin: 12px 0 10px;
   }
-  .banner-btn-01 {
-    font-size: 10px;
-    padding-top: 10px;
-  }
-  .banner-btn-01 a {
-    font-size: 12px;
-    padding: 5px 10px 5px 10px;
-  }
+
+
+
 }
+
+
+
+
+
 
 /* Banner-02 */
 
@@ -15067,13 +15122,21 @@ textarea:focus {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-btn-02 {
     font-size: 20px;
     padding: 10px 0px 10px 10px;
   }
   .banner-btn-02 a {
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px 10px 5px 10px;
   }
 }
@@ -15084,12 +15147,12 @@ textarea:focus {
     padding: 10px 0px 10px 10px;
   }
   .banner-btn-02 a {
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px 10px 5px 10px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .banner-btn-02 {
     font-size: 10px;
     padding: 10px 0px 10px 10px;
@@ -23641,7 +23704,6 @@ textarea:focus {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .dot-style-7 .slick-dots li {
@@ -23662,9 +23724,43 @@ textarea:focus {
 }
 
 .dot-style-7 .slick-dots li.slick-active button {
-  width: 23px;
+  width: 25px;
   border-radius: 50px;
 }
+
+.dot-style-7-position-1 .slick-dots {
+  bottom: 25px;
+  display: flex;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+  .dot-style-7-position-1 .slick-dots {
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .dot-style-7-position-1 .slick-dots {
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .dot-style-7-position-1 .slick-dots {
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dot-style-7-position-1 .slick-dots {
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .dot-style-7-position-1 .slick-dots {
+  }
+}
+
 
 /*---------- 13. Blog style  ------------*/
 .blog-wrap .blog-img {
