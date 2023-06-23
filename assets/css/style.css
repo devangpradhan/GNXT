@@ -2956,12 +2956,12 @@ textarea:focus {
 }
 
 .spf .container-fluid {
-  padding: 0 0px 0 200px;
+  padding: 0 0 0 55px;
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
   .spf .container-fluid {
-    padding: 0 0px 0 55px;
+  padding: 0 0 0 55px;
   }
 }
 
@@ -3841,7 +3841,7 @@ textarea:focus {
 
 
 .header-action-wrap .same-style a:hover {
-  color: #444E7A;
+  color: #AFAFAF;
 }
 
 .header-action-wrap .same-style.same-style-white a {
@@ -6443,8 +6443,11 @@ textarea:focus {
 
 
 /* cartbage */
+
 .header-cart .cart-active .cart-count {
-  color: #98a6ab;
+  color: #000;
+  border: 1px solid #707072;
+  background-color: #fff;
   font-size: 10px;
   height: 15px;
   width: 15px;
@@ -6453,10 +6456,9 @@ textarea:focus {
   line-height: 12px;
   text-align: center;
   border-radius: 50%;
-  right: 15px;
-  top: 18px;
+  right: 5px;
+  top: 20px;
 }
-
 
 
 .header-social-icon a {
@@ -7029,15 +7031,15 @@ textarea:focus {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .slider-height-13 {
-    height: 250px;
-  }
-}
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-height-13 {
     height: 190px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 575px) {
+  .slider-height-13 {
+    height: 105px;
   }
 }
 
@@ -10951,44 +10953,13 @@ textarea:focus {
 }
 
 .dot-style-6-position-1 .slick-dots {
-  /* left: 50%; */
-  /* bottom: 10px; */
   display: flex;
   text-align: center;
   position: relative;
   justify-content: center;
+  bottom: 30px;
 }
 
-@media only screen and (min-width: 1366px) and (max-width: 1600px) {
-  .dot-style-6-position-1 .slick-dots {
-    left: 40%;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1365px) {
-  .dot-style-6-position-1 .slick-dots {
-    left: 2%;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .dot-style-6-position-1 .slick-dots {
-    left: 6%;
-    bottom: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .dot-style-6-position-1 .slick-dots {
-    left: 5%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .dot-style-6-position-1 .slick-dots {
-    left: 5%;
-  }
-}
 
 .dot-style-6-position-2 .slick-dots {
   position: absolute;
@@ -15058,8 +15029,8 @@ textarea:focus {
   }
   
   .banner-wrap .banner-position-01 {
-    top: 65%;
-    left: 20px;
+    top: 55%;
+    left: 10px;
   }
   .banner-wrap .banner-content-01 h2 {
     font-size: 18px;
@@ -15068,9 +15039,22 @@ textarea:focus {
     font-size: 30px;
     margin: 12px 0 10px;
   }
-
-
-
+  .banner-wrap .banner-content-01 span {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 575px) {
+  .banner-btn-01 a {
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+  }
+  .banner-wrap .banner-position-01 {
+    left: 4%;
+    top: 75%;
+  }
+  .banner-wrap .banner-content-01 span {
+    font-size: 15px;
+  }
 }
 
 
@@ -15147,7 +15131,7 @@ textarea:focus {
     padding: 10px 0px 10px 10px;
   }
   .banner-btn-02 a {
-    font-size: 15px;
+    font-size: 10px;
     padding: 5px 10px 5px 10px;
   }
 }
@@ -15158,7 +15142,7 @@ textarea:focus {
     padding: 10px 0px 10px 10px;
   }
   .banner-btn-02 a {
-    font-size: 10px;
+    font-size: 8px;
     padding: 5px 10px 5px 10px;
   }
 }
@@ -20699,6 +20683,10 @@ textarea:focus {
     0 12px 12px rgba(222, 222, 222, 0.3), 0 15px 15px rgba(222, 222, 222, 0.3);
 }
 
+.ppb-product-wrap .product-content span{
+  font-size:14px;
+ }
+
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .ppb-product-wrap .ppb-gnxt-pro-title h1 {
     font-size: 40px;
@@ -20707,21 +20695,37 @@ textarea:focus {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ppb-product-wrap .ppb-gnxt-pro-title h1 {
-    font-size: 45px;
+    font-size: 40px;
+  }
+  .ppb-product-wrap .ppb-gnxt-pro-title {
+    top: 40%;
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .ppb-product-wrap .ppb-gnxt-pro-title h1 {
     font-size: 25px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ppb-product-wrap .ppb-gnxt-pro-title h1 {
+    font-size: 23px;
+  }
+  .ppb-product-wrap .ppb-gnxt-pro-title {
+    top: 27%;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 575px) {
   .ppb-product-wrap .ppb-gnxt-pro-title h1 {
     font-size: 45px;
   }
+  .ppb-product-wrap .ppb-gnxt-pro-title {
+    top: 40%;
+  }
 }
+
 
 .ppb-product-wrap {
   position: relative;
@@ -21525,22 +21529,36 @@ textarea:focus {
     line-height: 40px;
   }
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title-10 h2 {
     font-size: 50px;
     line-height: 1em;
   }
-
+  .section-title-10 span {
+    font-size:14px;
+   }
+  .section-title-10 {
+    text-align: center;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section-title-10 h2 {
+    font-size: 50px;
+    line-height: 1em;
+  }
   .section-title-10 span {
     font-size:14px;
    }
 }
 
-@media only screen and (max-width: 767px) {
-  .section-title-10 {
-    text-align: center;
+@media only screen and (min-width: 360px) and (max-width: 575px) {
+  .section-title-10 h2 {
+    font-size: 30px;
+    line-height: 1em;
   }
+  .section-title-10 span {
+    font-size:14px;
+   }
 }
 
 
@@ -24469,9 +24487,15 @@ textarea:focus {
 }
 
 /*---------- 14. Footer style ------------*/
+
 .footer-area {
   position: relative;
   background-color: #000;
+}
+
+.footer-nxt{
+  justify-content: center;
+  padding: 100px 50px 50px 100px;
 }
 
 .footer-area.kids-footer {
@@ -24592,7 +24616,7 @@ textarea:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer-widget .footer-info-list ul li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -24613,6 +24637,26 @@ textarea:focus {
   display: block;
   line-height: 1;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer-widget .footer-info-list ul li a{
+    font-size:13px !important;
+   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-widget .footer-info-list ul li a{
+    font-size:13px !important;
+   }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .footer-widget .footer-info-list ul li a{
+    font-size:11px !important;
+   }
+}
+
+
 
 .footer-widget .footer-info-list ul li a:hover {
   color: #dc3545;
