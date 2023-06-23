@@ -7887,7 +7887,7 @@ textarea:focus {
 
 .slider-mt-7,
 .breadcrumb-mt {
-  margin-top: 125px;
+  margin-top: 150px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -29379,6 +29379,58 @@ textarea:focus {
   transform: scale(1.03);
 }
 
+
+.about-content-1 {
+  margin: 25px 0 0 70px;
+}
+.about-content-1 ul {
+  list-style-type:circle;
+  padding-left: 35px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-content-1 {
+    margin: 50px 0 0 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-content-2 {
+    margin: 0px 0 0 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-content-1 {
+    margin: 30px 0 0 0px;
+  }
+}
+
+.about-content-1 h3 {
+  font-size: 29px;
+  line-height: 46px;
+  font-weight: bold;
+  margin: 0 0 22px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-content-1 h3 {
+    font-size: 23px;
+    line-height: 40px;
+    margin: 0 0 15px;
+  }
+}
+
+.about-content-1 p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+
+
+
+
+
 .about-content-2 {
   margin: 100px 0 0 70px;
 }
@@ -30496,7 +30548,6 @@ textarea:focus {
 
 .breadcrumb-area {
   position: relative;
-  background: #E8E8E8;
 }
 
 .breadcrumb-area .breadcrumb-img-1 {

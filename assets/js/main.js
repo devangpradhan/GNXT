@@ -1298,3 +1298,20 @@
     
 })(jQuery);
 
+    /*--------------------------
+        Load More
+    ---------------------------- */
+
+// $(function () {
+//     $(".col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12").slice(0, 3).show();
+//     $("body").on('click touchstart', '.load-more', function (e) {
+//       e.preventDefault();
+//       $(".col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12:hidden").slice(0, 3).slideDown();
+//       if ($(".col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12:hidden").length == 0) {
+//         $(".load-more").css('visibility', 'hidden');
+//       }
+//       $('html,body').animate({
+//         scrollTop: $(this).offset().top
+//       }, 1000);
+//     });
+//   });
