@@ -200,6 +200,7 @@
         loop: true,
         dots: false,
         arrows: false,
+        autoplay:true,
         responsive: [{
                 breakpoint: 1500,
                 settings: {
