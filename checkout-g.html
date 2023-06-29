@@ -688,7 +688,7 @@
         </div>
     </div>
 
-    <div class="breadcrumb-area breadcrumb-mt breadcrumb-ptb-2">
+    <div class="breadcrumb-area breadcrumb-mt breadcrumb-ptb-2 ">
         <div class="container">
             <div class="breadcrumb-content">
                 <h2>Checkout</h2>
@@ -719,8 +719,8 @@
             </div>
         </div>
     </div>
-    <div class="checkout-area bg-gray pt-160 pb-160">
-        <div class="container">
+    <div class="checkout-area bg-gray pt-160 pb-160 section-padding-11">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="checkout-left-wrap">
@@ -755,11 +755,20 @@
                                 </div>
                                 <div id="checkout-guest" class="tab-pane active">
                                     <div class="checkout-guest-wrap">
-                                        <h4>Contact information</h4>
+                                        <div class="row">
+                                        <h4 class="d-flex left">Contact information</h4>
+                                        <span class="d-flex ">All Ready Have login</span>
+                                        </div>
                                         <div class="checkout-guest-style">
                                             <form action="#">
-                                                <input type="text" name="user-name"
-                                                    placeholder="Enter Mobile Number or Email">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <input type="text" name="user-name" placeholder="Enter Email Address">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" name="user-name" placeholder="Enter Mobile Number">
+                                                    </div>
+                                                </div>
                                                 <div class="guest-login-toggle-btn">
                                                     <input type="checkbox">
                                                     <label>Keep me up to date on news and exclusive offers</label>

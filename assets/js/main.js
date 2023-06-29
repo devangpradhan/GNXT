@@ -1170,6 +1170,16 @@
         $( '.payment-box' ).slideUp(900);
         $(this).siblings( '.payment-box' ).slideToggle(900);
     });
+
+
+    var checked = $( '.pin-address input:checked' )
+    if(checked){
+        $(checked).siblings( '.address-box' ).slideDown(900);
+    };
+	 $( '.pin-address input' ).on('change', function() {
+        $( '.address-box' ).slideUp(900);
+        $(this).siblings( '.address-box' ).slideToggle(900);
+    });
     
     
     /*-----------------------
