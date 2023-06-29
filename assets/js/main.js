@@ -1309,7 +1309,14 @@
     
 })(jQuery);
 
-    /*--------------------------
+
+  // header search
+  $('.sico, .search-close').on('click', function () {
+    $('.search-wrapper').toggleClass('search-appear');
+  });
+
+
+      /*--------------------------
         Load More
     ---------------------------- */
 
@@ -1326,9 +1333,3 @@
 //       }, 1000);
 //     });
 //   });
-
-
-  // header search
-  $('.sico, .search-close').on('click', function () {
-    $('.search-wrapper').toggleClass('search-appear');
-  });
