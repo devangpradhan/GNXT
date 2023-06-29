@@ -1326,3 +1326,9 @@
 //       }, 1000);
 //     });
 //   });
+
+
+  // header search
+  $('.sico, .search-close').on('click', function () {
+    $('.search-wrapper').toggleClass('search-appear');
+  });
