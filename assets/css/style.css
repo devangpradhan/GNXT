@@ -3157,7 +3157,7 @@ textarea:focus {
   padding: 20px 48px 20px;
   z-index: 2;
   position: relative;
-  background-color: #EBA866;
+  background-color: #2c2c2c;
 }
 
 .btn-style-3 a.btn3-bg-green {
@@ -28221,6 +28221,482 @@ textarea:focus {
     padding-bottom: 50px;
   }
 }
+
+
+/* Product Image Button */
+
+/* 360 Button */
+
+.pixicon360 {
+  width: 45px;
+  height: 45px;
+  line-height: 54px;
+  border: 1px solid #DEDEDE;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  cursor: pointer;
+  background: #DEDEDE;
+}
+
+.pixicon360:hover {
+  opacity: 1;
+  background-color: #000000;
+}
+
+.pixicon-360 {
+  background-size: 30px;
+  background-image: url(/assets/images/icon-img/360.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pixicon-360:hover,
+.pixicon-360:focus {
+  filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(16deg) brightness(100%)
+    contrast(92%);
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pixicon360 {
+      width: 35px;
+      height: 35px;
+  }
+  .pixicon-360 {
+      background-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 575px) {
+  .pixicon360 {
+      width: 30px;
+      height: 30px;
+  }
+  .pixicon-360 {
+      background-size: 20px;
+  }
+}
+
+
+
+
+/* Video Button */
+
+.pixiconvdo {
+  width: 45px;
+  height: 45px;
+  line-height: 54px;
+  border: 1px solid #DEDEDE;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  left: 75px;
+  cursor: pointer;
+  background: #DEDEDE;
+}
+
+.pixiconvdo:hover {
+  opacity: 1;
+  background-color: #000000;
+}
+
+.pixicon-vdo {
+  background-size: 30px;
+  background-image: url(/assets/images/icon-img/vdo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pixicon-vdo:hover,
+.pixicon-vdo:focus {
+  filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(16deg) brightness(100%)
+    contrast(92%);
+}
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pixiconvdo {
+      width: 35px;
+      height: 35px;
+  }
+  .pixicon-vdo {
+      background-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 575px) {
+  .pixiconvdo {
+      margin-left: -15px;
+      width: 30px;
+      height: 30px;
+  }
+  .pixicon-vdo {
+      background-size: 20px;
+  }
+}
+
+/* Video Block */
+
+.button-vdo {
+  width: 59px;
+  height: 59px;
+  line-height: 54px;
+  border: 2px solid #eaeaea;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 17px;
+  cursor: pointer;
+}
+
+.button-vdo span {
+  font-weight: bold;
+}
+
+.js-product-vdo {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.vdo-frame {
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.product-vdo-view-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.vdo {
+  vertical-align: middle;
+}
+
+.vdo-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.vdo-rounded {
+  border-radius: 6px;
+}
+
+.vdo-thumbnail {
+  padding: 4px;
+  line-height: 1.42857;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.vdo-circle {
+  border-radius: 50%;
+}
+
+.modal-content-vdo {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border-radius: .3rem;
+  outline: 0
+}
+.product-vdo-view-wrapper div .close{
+  z-index:10;
+  bottom:-30px;
+  right:15px;
+  color: red;
+  position:relative;
+ }
+ 
+
+/* 360 Modal View */
+
+ .e-product-button {
+  width: 59px;
+  height: 59px;
+  line-height: 54px;
+  border: 2px solid #eaeaea;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  left: 17px;
+  cursor: pointer;
+}
+.e-product-button span {
+  font-weight: bold;
+}
+
+.e-threed-view .nav_bar a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 0;
+  text-align: center;
+  text-decoration: none;
+  text-indent: unset;
+  background: #fff;
+}
+.e-threed-view .nav_bar a:after {
+  font-size: 26px;
+  font-family: "ionicons";
+}
+.e-threed-view .nav_bar .nav_bar_previous:after {
+  content: "\f3d2";
+}
+.e-threed-view .nav_bar .nav_bar_play:after {
+  content: "\f487";
+}
+.e-threed-view .nav_bar .nav_bar_next:after {
+  content: "\f3d3";
+}
+.e-threed-view .nav_bar .nav_bar_stop:after {
+  content: "\f24f";
+}
+
+.product-360-view-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+
+.e-threed-view:after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  height: 50%;
+  z-index: 5;
+  border-bottom: 5px solid rgba(175, 175, 175, 0.15);
+  border-top: 2px solid rgba(175, 175, 175, 0.05);
+  border-right: 2px solid rgba(175, 175, 175, 0.1);
+  border-left: 2px solid rgba(175, 175, 175, 0.1);
+  border-radius: 50%;
+}
+
+.e-threed-view .nav_bar {
+  bottom: 20px;
+  z-index: 11;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.product-360-view-wrapper .close-popup {
+  margin-left:470px;
+  float:left;
+}
+
+
+
+/* My Profile */
+
+.single-input-item select {
+  border: 1px solid #e8e8e8;
+  height: 50px;
+  background-color: transparent;
+  padding: 2px 20px;
+  color: #1f2226;
+  font-size: 13px;
+}
+
+.checkbox1 input {
+  height: 20%;
+  float: right;
+}
+
+.add-btn{
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  border-style: dashed;
+  border-color: #e8e8e8;
+  color: #727272
+}
+
+.cur-add{
+  border-style: solid;
+  height: 195px;
+  width: 100%;
+  border-color: #e8e8e8;
+  padding-inline: 20px;
+}
+.edit{
+  float: right;
+  cursor: pointer;
+}
+
+.remove{
+  float: right;
+  cursor: pointer;
+}
+
+.profile-detail .row{
+  row-gap: 3.2rem;
+}
+
+.b-cart{
+  border: none;
+  border-radius: 4px;
+  width: max-content;
+  background-color: #0a1039;
+  color: #fff;
+}
+.fa-solid{
+  cursor: pointer;
+}
+.delete{
+  width: 95%;
+  height: 40px;
+  margin-top: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #0a1039;
+  background-color: #fff;
+  color: #0a1039;
+
+}
+.add-cart{
+      width: 95%;
+      height: 40px;
+      margin-top: 10px;
+      border-radius: 5px;
+      background-color: #0a1039;
+      color: #fff;  
+}
+
+
+.description, .amount, .company{
+  margin-bottom: 5px;
+}
+
+h5{ color: green; }
+
+.card1{
+  background-color: #ececec;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.pay-btn{
+  width: 100%;
+}
+.btn-text-right{
+  text-align: right;
+}
+
+
+/**For Mobile devices**/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .p-detail1{
+      display: none;
+  }
+  .delete{
+      width: 100%;
+      /*margin-top: 20px;*/     
+  }
+  .add-cart{
+      width: 100%;
+      float: right;  
+  }
+  .wishlist-img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .options{
+      display:grid;
+  }
+}
+
+/**For Tablets or iPad**/
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  .p-detail1{
+      display: none;
+  }
+}
+
+
+/**For Laptop or small-size screen**/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  .p-detail1{
+      display: none;
+  }
+}
+
+/**For Desktop or large-size screen**/
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .p-detail2{
+      display: none;
+  }
+}
+
+/**For Extra-large size device**/
+@media only screen and (min-width: 1200px) and (max-width: 3000px){
+  .p-detail2{
+      display: none;
+  }
+}
+
+/**For Extra-large size device**/
+.img-account-profile {
+  height: 8rem;
+}
+.rounded-circle {
+  border-radius: 70% !important;
+}
+.card-header:first-child {
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+  padding: 1rem 1.35rem;
+  margin-bottom: 0;
+  background-color: rgba(33, 40, 50, 0.03);
+  border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.btn{
+  background-color: #0A1039;
+}
+
+  
+
+
+
+
+
+
+
+
+
 
 /*---------- 17. Instagram style ------------*/
 .instagram-wrap-1 {
