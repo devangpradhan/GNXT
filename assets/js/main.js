@@ -1069,7 +1069,7 @@
         slidesToScroll: 1,
         dots: true,
         fade: false,
-        arrows: false,
+        arrows: true,
     });
     
     /*--------------------------------
@@ -1207,6 +1207,7 @@
         draggable: false,
         fade: false,
         asNavFor: '.product-dec-slider-2',
+        
     });
     
     /*--
