@@ -2039,6 +2039,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .containe-heading-left a.active {
+  padding-top: 15px;
   font-weight: bold;
   color: #111111;
   font-size: 40px;
@@ -2076,7 +2077,7 @@ input[type="range"]::-moz-range-thumb {
 @media only screen and (max-width: 767px) {
   .containe-heading-rite a {
     margin: 0 6px;
-    padding-right: 67px;
+    /* padding-right: 67px; */
   }
 
   .containe-heading-rite a:first-child {
@@ -2101,9 +2102,9 @@ input[type="range"]::-moz-range-thumb {
   font-size: 40px;
 }
 
-.text-right .active p {
+/* .text-right .active p {
   margin-left: 65px;
-}
+} */
 
 .containe-heading-rite a.active:before {
   width: 100%;
