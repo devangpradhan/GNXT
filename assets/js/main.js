@@ -396,7 +396,7 @@
         Product slider active 4
     -----------------------------------*/
     $('.product-slider-active-5').slick({
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         loop: true,
         dots: false,
