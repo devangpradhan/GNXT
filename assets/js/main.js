@@ -350,6 +350,7 @@
         loop: true,
         dots: false,
         arrows: false,
+        autoplay:true,
         responsive: [{
                 breakpoint: 1500,
                 settings: {
@@ -390,6 +391,59 @@
         ]
     });
     
+
+    /*--------------------------------
+        Product slider active 4
+    -----------------------------------*/
+    $('.product-slider-active-5').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        loop: true,
+        dots: false,
+        arrows: false,
+        responsive: [{
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+    
+    
+
+
     
     /*--------------------------------
         Brand logo active
