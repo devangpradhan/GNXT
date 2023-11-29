@@ -1276,6 +1276,8 @@
         focusOnSelect:true,
         fade: false,
         arrows: false,
+        infinite: true,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1199,
