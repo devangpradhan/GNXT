@@ -1261,6 +1261,8 @@
         draggable: false,
         fade: false,
         asNavFor: '.product-dec-slider-2',
+        autoplay:true,
+        loop:true,
         
     });
     
