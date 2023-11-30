@@ -27586,7 +27586,7 @@ textarea:focus {
 
 
 .product-small-img-style .slick-list .product-dec-small {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .product-small-img-style .slick-list .product-dec-small img {
@@ -27597,14 +27597,54 @@ textarea:focus {
   padding: 0 184px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
 
-  /* .product-small-img-style .slick-list .product-dec-small {
-    margin-bottom: 20px;
-  } */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
   .product-details-slider-5-active .slick-list {
     padding: 0 120px;
+  }
+
+  .product-dec-slider-2 .slick-list img{
+    width:55px;
+    height:55px;
+  }
+
+  .product-dec-right .gif-img-btn img{
+    width:55px;
+    height:55px;
+  }
+
+  .product-dec-right .av-icon-btn img{
+    width:55px;
+    height:55px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+  .product-small-img-style .slick-list .product-dec-small {
+    margin-bottom: 5px;
+  }
+
+  .product-details-slider-5-active .slick-list {
+    padding: 0 120px;
+  }
+
+  .product-dec-slider-2 .slick-list img{
+    width:55px;
+    height:55px;
+  }
+
+  .product-dec-right .gif-img-btn img{
+    width:55px;
+    height:55px;
+  }
+
+  .product-dec-right .av-icon-btn img{
+    width:55px;
+    height:55px;
   }
 }
 
@@ -27612,15 +27652,53 @@ textarea:focus {
   .product-details-slider-5-active .slick-list {
     padding: 0 50px;
   }
-}
+  .product-small-img-style .slick-list .product-dec-small {
+    margin-bottom: 5px;
+  }
 
   .product-dec-slider-2 .slick-list img{
-    width:65px;
+    width:55px;
+    height:55px;
   }
+
   .product-dec-right .gif-img-btn img{
-    width:65px;
-    height:65px;
+    width:55px;
+    height:55px;
   }
+
+  .product-dec-right .av-icon-btn img{
+    width:55px;
+    height:55px;
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .product-small-img-style .slick-list .product-dec-small {
+    margin-bottom: 5px;
+  }
+
+  .product-dec-slider-2 .slick-list img{
+    width:45px;
+    height:45px;
+  }
+
+  .product-dec-right .gif-img-btn img{
+    width:45px;
+    height:45px;
+  }
+
+  .product-dec-right .av-icon-btn img{
+    width:45px;
+    height:45px;
+  }
+
+}
+
+
+
+
+
 
 .product-details-slider-5-active .slick-list .single-pro-details-slider-5 {
   margin: 0px 15px 0px 15px;
