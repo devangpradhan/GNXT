@@ -36,21 +36,23 @@
 </head>
 
 <style>
-#sidebar {
-    transition-timing-function: ease-in;
-    transition: 0.10s;
-}
+    #sidebar {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; 
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  transform: translateX(-100%);
 
-#main.col-lg-12 {
-    transition: 0.10s;
-    transition-timing-function: ease-in;
-}
+} 
 
-#main.col-lg-9{
-    transition: 0.10s;
-    transition-timing-function: ease-in-out;
-
-}
+#sidebar.show {
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+} 
 
 </style>
 
@@ -659,653 +661,649 @@
                         <li class="active"> indoor </li>
                     </ul>
                 </div> -->
-                <!-- <div class="product-details-top-content">
+                <div class="product-details-top-content">
                     <div class="product-details-content">
                         <h4>Individual Category</h4>
                         <p class="pro-dec-paragraph-2">Explaining the category</p>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
         <div class="shop-area pt-10 pb-10">
             <div class="container">
-
-                    <div class="col-lg-12">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-9">
                         <div class="tab-content">
                             <div id="shop-categorie-1" class="tab-pane active">
                                 <div class="shop-top-bar">
                                     <div class="shop-top-bar-left">
-                                        <div class="shop-tab ">
+                                        <div class="shop-tab nav">
+
                                             <div class="shop-filter">
-                                                <a class="shop-filter-active"  id="toggleButton">Filters</a>
+                                                <a class="shop-filter-active" id="#your-toggle-id" data-toggle="collapse" data-target="#sidebar">Filters</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="shop-top-bar-right">
-                                        <!-- <div class="shop-page-list">
+                                        <div class="shop-page-list">
                                             <ul>
                                                 <li>Show</li>
                                                 <li class="active"><a href="#">2</a></li>
                                                 <li><a href="#">4</a></li>
                                                 <li><a href="#">6</a></li>
                                             </ul>
-                                        </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content pt-30">
+                                    <div id="shop-3" class="tab-pane active">
+                                        <div class="row">
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-1.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-2.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-4.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-1.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-2.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-3.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="product-wrap mb-50">
+                                                    <div class="product-img product-img-zoom mb-25">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-4.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4><a href="product-details.html">Individual Category</a>
+                                                        </h4>
+                                                        <h5>Explaining the category</h5>
+                                                        <!-- <h6>7 Variants</h6>
+                                                        <div class="product-price">
+                                                            <span>₹ 1365.00</span>
+                                                            <span class="old-price"></span>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="product-action-position-1 text-center">
+                                                        <div class="product-content">
+                                                            <h4><a href="product-details.html">Individual
+                                                                    Category</a>
+                                                            </h4>
+                                                            <h5>Explaining the category</h5>
+                                                            <!-- <div class="product-price">
+                                                                <span>$ 124</span>
+                                                                <span class="old-price">$ 130</span>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="product-action-wrap">
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <div id="shop-4" class="tab-pane ">
+                                        <div class="shop-list-wrap mb-50">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                    <div class="product-list-img">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-1.jpg" alt="">
+                                                        </a>
+                                                        <div class="shop-list-quickview">
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <div class="shop-list-content ml-20">
+                                                        <h3><a href="#">Product Title Here</a></h3>
+                                                        <div class="pro-list-price">
+                                                            <span>$50.00</span>
+                                                            <span class="old-price">$50.00</span>
+                                                        </div>
+                                                        <p>Composition: 50% cotton,45% polyester, 5% polyamide.
+                                                            Filling:
+                                                            100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
+                                                            polyester</p>
+                                                        <div class="product-list-action">
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shop-list-wrap mb-50">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                    <div class="product-list-img">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-p-2.jpg" alt="">
+                                                        </a>
+                                                        <div class="shop-list-quickview">
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <div class="shop-list-content ml-20">
+                                                        <h3><a href="#">Product Title Here</a></h3>
+                                                        <div class="pro-list-price">
+                                                            <span>$50.00</span>
+                                                            <span class="old-price">$50.00</span>
+                                                        </div>
+                                                        <p>Composition: 50% cotton,45% polyester, 5% polyamide.
+                                                            Filling:
+                                                            100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
+                                                            polyester</p>
+                                                        <div class="product-list-action">
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shop-list-wrap mb-50">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                    <div class="product-list-img">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-03.jpg" alt="">
+                                                        </a>
+                                                        <div class="shop-list-quickview">
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <div class="shop-list-content ml-20">
+                                                        <h3><a href="#">Product Title Here</a></h3>
+                                                        <div class="pro-list-price">
+                                                            <span>$50.00</span>
+                                                            <span class="old-price">$50.00</span>
+                                                        </div>
+                                                        <p>Composition: 50% cotton,45% polyester, 5% polyamide.
+                                                            Filling:
+                                                            100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
+                                                            polyester</p>
+                                                        <div class="product-list-action">
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shop-list-wrap mb-50">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                                    <div class="product-list-img">
+                                                        <a href="product-details.html">
+                                                            <img src="assets/images/product/product-04.jpg" alt="">
+                                                        </a>
+                                                        <div class="shop-list-quickview">
+                                                            <button data-toggle="modal" data-target="#exampleModal"><i
+                                                                    class="icon-zoom"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                                    <div class="shop-list-content ml-20">
+                                                        <h3><a href="#">Product Title Here</a></h3>
+                                                        <div class="pro-list-price">
+                                                            <span>$50.00</span>
+                                                            <span class="old-price">$50.00</span>
+                                                        </div>
+                                                        <p>Composition: 50% cotton,45% polyester, 5% polyamide.
+                                                            Filling:
+                                                            100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
+                                                            polyester</p>
+                                                        <div class="product-list-action">
+                                                            <button title="Add to Compare"><i
+                                                                    class="icon-compare"></i></button>
+                                                            <div class="product-action-cart">
+                                                                <button title="Add to Cart">Add to cart</button>
+                                                            </div>
+                                                            <button title="Add to Wishlist"><i
+                                                                    class="icon-heart-empty"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pro-pagination-style text-center mt-50 mb-50">
+                                        <ul>
+                                            <li><a class="active" href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#"><i class="icofont-long-arrow-right"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                    <!-- Side Bar -->
-                    <div class="col-lg-3" id="sidebar">
-                        <div class="shop-sidebar-style">
-                            <div class="shop-sidebar-style">
-                                <div class="sidebar-widget">
-                                    <!-- <h4 class="pro-sidebar-title">Filter</h4> -->
-                                    <div class="sidebar-widget-categori mt-45 mb-70">
-                                        <ul id="categoryList">
-                                            <li><a href="#">All</a> </li>
-                                            <li><a class="active" href="#">Filteration</a> </li>
-                                            <li><a href="#">Trail</a> </li>
-                                            <li><a href="#">Men</a> </li>
-                                            <li><a href="#">Accessories</a> </li>
-                                            <li><a href="#"> Big & Tall </a> </li>
-                                            <li><a href="#">Contemporary</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-widget">
-                                    <h4 class="pro-sidebar-title">Filter By Color</h4>
-                                    <div class="pro-details-color-content sidebar-widget-color mt-45 mb-70">
-                                        <ul>
-                                            <li><a class="white" href="#">Black</a></li>
-                                            <li><a class="azalea" href="#">Blue</a></li>
-                                            <li><a class="dolly" href="#">Green</a></li>
-                                            <li><a class="peach-orange" href="#">Orange</a></li>
-                                            <li><a class="mona-lisa active" href="#">Pink</a></li>
-                                            <li><a class="cupid" href="#">gray</a></li>
-                                            <li><a class="one" href="#">one</a></li>
-                                            <li><a class="two" href="#">two</a></li>
-                                            <li><a class="three" href="#">three</a></li>
-                                            <li><a class="four" href="#">four</a></li>
-                                            <li><a class="five" href="#">five</a></li>
-                                            <li><a class="six" href="#">six</a></li>
-                                            <li><a class="seven" href="#">seven</a></li>
-                                            <li><a class="eight" href="#">eight</a></li>
-                                            <li><a class="nine" href="#">nine</a></li>
-                                            <li><a class="ten" href="#">ten</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-widget">
-                                    <h4 class="pro-sidebar-title">Filter By Size</h4>
-                                    <div class="sidebar-widget-size mt-50 mb-75">
-                                        <ul>
-                                            <li><a href="#">XS</a> </li>
-                                            <li><a href="#">S</a> </li>
-                                            <li><a href="#">M</a> </li>
-                                            <li><a href="#">L</a> </li>
-                                            <li><a href="#">XL</a> </li>
-                                            <li><a href="#">XXL</a> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="sidebar-widget">
-                                    <h4 class="pro-sidebar-title">Filter By Price Range</h4>
-                                    <div class="price-filter mt-55 mb-65">
-                                        <div id="slider-range"></div>
-                                        <div class="price-slider-amount">
-                                            <div class="label-input">
-                                                <span>Price: </span><input type="text" id="amount" name="price"
-                                                    placeholder="Add Your Price" />
+                    <div class="col-lg-3 collapse" id="sidebar">
+                        <div id="sidebar" class="collapse">
+                            <div id="offcanvasSidebar" class="offcanvas">
+                                <div class="shop-sidebar-style">
+                                        <div class="shop-sidebar-style">
+                                            <div class="sidebar-widget">
+                                                <!-- <h4 class="pro-sidebar-title">Filter</h4> -->
+                                                <div class="sidebar-widget-categori mt-45 mb-70">
+                                                    <ul id="categoryList">
+                                                        <li><a href="#">All</a> </li>
+                                                        <li><a class="active" href="#">Filteration</a> </li>
+                                                        <li><a href="#">Trail</a> </li>
+                                                        <li><a href="#">Men</a> </li>
+                                                        <li><a href="#">Accessories</a> </li>
+                                                        <li><a href="#"> Big & Tall </a> </li>
+                                                        <li><a href="#">Contemporary</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sidebar-widget">
-                                    <h4 class="pro-sidebar-title">Filter By Brand</h4>
-                                    <div class="sidebar-widget-brand-logo mt-50">
-                                        <ul>
-                                            <li><a href="#"><img src="assets/images/brand-logo/brand-logo-1.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#"><img src="assets/images/brand-logo/brand-logo-2.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#"><img src="assets/images/brand-logo/brand-logo-3.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#"><img src="assets/images/brand-logo/brand-logo-6.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#"><img src="assets/images/brand-logo/brand-logo-5.png" alt=""></a>
-                                            </li>
-                                            <li><a href="#"><img src="assets/images/brand-logo/brand-logo-4.png" alt=""></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    </div>
-                    <!-- Containt -->
-                    <div class="col-lg-9" id="main">
-                        <div class="tab-content">
-                            <div class="tab-content pt-30">
-                                <div id="shop-3" class="tab-pane active">
-                                    <div class="row">
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-1.jpg" alt="">
-                                                    </a>
+                                            <div class="sidebar-widget">
+                                                <h4 class="pro-sidebar-title">Filter By Color</h4>
+                                                <div class="pro-details-color-content sidebar-widget-color mt-45 mb-70">
+                                                    <ul>
+                                                        <li><a class="white" href="#">Black</a></li>
+                                                        <li><a class="azalea" href="#">Blue</a></li>
+                                                        <li><a class="dolly" href="#">Green</a></li>
+                                                        <li><a class="peach-orange" href="#">Orange</a></li>
+                                                        <li><a class="mona-lisa active" href="#">Pink</a></li>
+                                                        <li><a class="cupid" href="#">gray</a></li>
+                                                        <li><a class="one" href="#">one</a></li>
+                                                        <li><a class="two" href="#">two</a></li>
+                                                        <li><a class="three" href="#">three</a></li>
+                                                        <li><a class="four" href="#">four</a></li>
+                                                        <li><a class="five" href="#">five</a></li>
+                                                        <li><a class="six" href="#">six</a></li>
+                                                        <li><a class="seven" href="#">seven</a></li>
+                                                        <li><a class="eight" href="#">eight</a></li>
+                                                        <li><a class="nine" href="#">nine</a></li>
+                                                        <li><a class="ten" href="#">ten</a></li>
+                                                    </ul>
                                                 </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
+                                            </div>
+                                            <div class="sidebar-widget">
+                                                <h4 class="pro-sidebar-title">Filter By Size</h4>
+                                                <div class="sidebar-widget-size mt-50 mb-75">
+                                                    <ul>
+                                                        <li><a href="#">XS</a> </li>
+                                                        <li><a href="#">S</a> </li>
+                                                        <li><a href="#">M</a> </li>
+                                                        <li><a href="#">L</a> </li>
+                                                        <li><a href="#">XL</a> </li>
+                                                        <li><a href="#">XXL</a> </li>
+                                                    </ul>
                                                 </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
+                                            </div>
+                                            <div class="sidebar-widget">
+                                                <h4 class="pro-sidebar-title">Filter By Price Range</h4>
+                                                <div class="price-filter mt-55 mb-65">
+                                                    <div id="slider-range"></div>
+                                                    <div class="price-slider-amount">
+                                                        <div class="label-input">
+                                                            <span>Price: </span><input type="text" id="amount" name="price"
+                                                                placeholder="Add Your Price" />
                                                         </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="sidebar-widget">
+                                                <h4 class="pro-sidebar-title">Filter By Brand</h4>
+                                                <div class="sidebar-widget-brand-logo mt-50">
+                                                    <ul>
+                                                        <li><a href="#"><img src="assets/images/brand-logo/brand-logo-1.png" alt=""></a>
+                                                        </li>
+                                                        <li><a href="#"><img src="assets/images/brand-logo/brand-logo-2.png" alt=""></a>
+                                                        </li>
+                                                        <li><a href="#"><img src="assets/images/brand-logo/brand-logo-3.png" alt=""></a>
+                                                        </li>
+                                                        <li><a href="#"><img src="assets/images/brand-logo/brand-logo-6.png" alt=""></a>
+                                                        </li>
+                                                        <li><a href="#"><img src="assets/images/brand-logo/brand-logo-5.png" alt=""></a>
+                                                        </li>
+                                                        <li><a href="#"><img src="assets/images/brand-logo/brand-logo-4.png" alt=""></a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-2.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
-                                                </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-3.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
-                                                </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-4.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
-                                                </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-1.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
-                                                </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-2.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
-                                                </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-3.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
-                                                </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="product-wrap mb-50">
-                                                <div class="product-img product-img-zoom mb-25">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-4.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="product-content">
-                                                    <h4><a href="product-details.html">Individual Category</a>
-                                                    </h4>
-                                                    <h5>Explaining the category</h5>
-                                                    <!-- <h6>7 Variants</h6>
-                                                    <div class="product-price">
-                                                        <span>₹ 1365.00</span>
-                                                        <span class="old-price"></span>
-                                                    </div> -->
-                                                </div>
-                                                <div class="product-action-position-1 text-center">
-                                                    <div class="product-content">
-                                                        <h4><a href="product-details.html">Individual
-                                                                Category</a>
-                                                        </h4>
-                                                        <h5>Explaining the category</h5>
-                                                        <!-- <div class="product-price">
-                                                            <span>$ 124</span>
-                                                            <span class="old-price">$ 130</span>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="product-action-wrap">
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-
-                                <div id="shop-4" class="tab-pane ">
-                                    <div class="shop-list-wrap mb-50">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="product-list-img">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-1.jpg" alt="">
-                                                    </a>
-                                                    <div class="shop-list-quickview">
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                                <div class="shop-list-content ml-20">
-                                                    <h3><a href="#">Product Title Here</a></h3>
-                                                    <div class="pro-list-price">
-                                                        <span>$50.00</span>
-                                                        <span class="old-price">$50.00</span>
-                                                    </div>
-                                                    <p>Composition: 50% cotton,45% polyester, 5% polyamide.
-                                                        Filling:
-                                                        100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
-                                                        polyester</p>
-                                                    <div class="product-list-action">
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="shop-list-wrap mb-50">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="product-list-img">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-p-2.jpg" alt="">
-                                                    </a>
-                                                    <div class="shop-list-quickview">
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                                <div class="shop-list-content ml-20">
-                                                    <h3><a href="#">Product Title Here</a></h3>
-                                                    <div class="pro-list-price">
-                                                        <span>$50.00</span>
-                                                        <span class="old-price">$50.00</span>
-                                                    </div>
-                                                    <p>Composition: 50% cotton,45% polyester, 5% polyamide.
-                                                        Filling:
-                                                        100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
-                                                        polyester</p>
-                                                    <div class="product-list-action">
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="shop-list-wrap mb-50">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="product-list-img">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-03.jpg" alt="">
-                                                    </a>
-                                                    <div class="shop-list-quickview">
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                                <div class="shop-list-content ml-20">
-                                                    <h3><a href="#">Product Title Here</a></h3>
-                                                    <div class="pro-list-price">
-                                                        <span>$50.00</span>
-                                                        <span class="old-price">$50.00</span>
-                                                    </div>
-                                                    <p>Composition: 50% cotton,45% polyester, 5% polyamide.
-                                                        Filling:
-                                                        100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
-                                                        polyester</p>
-                                                    <div class="product-list-action">
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="shop-list-wrap mb-50">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="product-list-img">
-                                                    <a href="product-details.html">
-                                                        <img src="assets/images/product/product-04.jpg" alt="">
-                                                    </a>
-                                                    <div class="shop-list-quickview">
-                                                        <button data-toggle="modal" data-target="#exampleModal"><i
-                                                                class="icon-zoom"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                                <div class="shop-list-content ml-20">
-                                                    <h3><a href="#">Product Title Here</a></h3>
-                                                    <div class="pro-list-price">
-                                                        <span>$50.00</span>
-                                                        <span class="old-price">$50.00</span>
-                                                    </div>
-                                                    <p>Composition: 50% cotton,45% polyester, 5% polyamide.
-                                                        Filling:
-                                                        100% polyester. Hood fur: 64% acrylic,23% modacrylic,13%
-                                                        polyester</p>
-                                                    <div class="product-list-action">
-                                                        <button title="Add to Compare"><i
-                                                                class="icon-compare"></i></button>
-                                                        <div class="product-action-cart">
-                                                            <button title="Add to Cart">Add to cart</button>
-                                                        </div>
-                                                        <button title="Add to Wishlist"><i
-                                                                class="icon-heart-empty"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pro-pagination-style text-center mt-50 mb-50">
-                                    <ul>
-                                        <li><a class="active" href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#"><i class="icofont-long-arrow-right"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
-        
         <footer class="footer-area pt-100 spf">
             <div class="footer-top pb-50 pl-50 pr-50">
                 <div class="container-fluid">
@@ -1349,6 +1347,7 @@
                                 </div>
                             </div>
                         </div>
+        
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="row">
                                 <div class="footer-widget mb-40">
@@ -1611,12 +1610,20 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        $(document).ready(function() {
-    $('#toggleButton').click(function() {
-        $('#sidebar').toggle();
-        $('#main').toggleClass('col-lg-9 col-lg-12');
+//         $('[data-toggle="offcanvas"]').on('click', function () {
+//   $('#sidebar').toggleClass('show');
+// });
+
+// Assuming you have a checkbox for the toggle
+    document.querySelector('#your-toggle-id').addEventListener('change', function() {
+        var divElement = document.querySelector('.col-lg-9');
+        if (this.checked) {
+            divElement.className = 'col-lg-9';
+        } else {
+            divElement.className = 'col-lg-12';
+        }
     });
-    });
+
 
     </script>
 
