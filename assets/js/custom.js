@@ -22,9 +22,9 @@ $(function () {
 
 // Sidebar popup
 
-// $('[data-toggle="offcanvas"]').on('click', function () {
-//   $('#sidebar').toggleClass('show');
-// });
+$('[data-toggle="offcanvas"]').on('click', function () {
+  $('#sidebar').toggleClass('show');
+});
 
 
 // $(document).ready(function () {

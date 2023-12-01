@@ -2944,7 +2944,6 @@ input {
   transform: translateX(-100%);
   transition-timing-function: ease-in;
   transition: 0.3s;
-  
 } 
 
 #sidebar.show {
@@ -2954,4 +2953,3 @@ input {
 } 
 
 /* Sidebar  Popup */
-
