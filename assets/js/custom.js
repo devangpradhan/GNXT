@@ -18,3 +18,38 @@ $(function () {
   });
 });
 
+
+
+// Sidebar popup
+
+// $('[data-toggle="offcanvas"]').on('click', function () {
+//   $('#sidebar').toggleClass('show');
+// });
+
+
+// $(document).ready(function () {
+//   // Toggle between col-lg-9 and col-lg-3 on button click
+//   $(".btn-primary").click(function () {
+//     $("#togglingColumn").toggleClass("col-lg-9 col-lg-12");
+//   });
+// });
+
+
+// $(document).ready(function() {
+//   $("button").click(function() {
+//       $("#myCol").toggleClass("col-lg-9 col-lg-12");
+//   });
+// });
+
+
+// $(document).ready(function () {
+//   $("#sidebar").mCustomScrollbar({
+//       theme: "minimal"
+//   });
+
+//   $('#sidebarCollapse').on('click', function () {
+//       $('#sidebar, #content').toggleClass('active');
+//       $('.collapse.in').toggleClass('in');
+//       $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+//   });
+// });

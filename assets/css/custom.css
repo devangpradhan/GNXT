@@ -2898,7 +2898,6 @@ input {
 
 /* Gif Popup */
 
-
 .mfp-no-margins img.mfp-img {
 	padding: 0;
 }
@@ -2933,3 +2932,26 @@ input {
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
+/* Sidebar  Popup */
+
+#sidebar {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; 
+  transform: translateX(-100%);
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  
+} 
+
+#sidebar.show {
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  transform: translateX(0);
+} 
+
+/* Sidebar  Popup */
+
