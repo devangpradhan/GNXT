@@ -31,3 +31,14 @@ $(function () {
 //       menuItems.style.display = 'none';
 //   }
 // });
+
+
+// document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+//     var menu = document.querySelector('.shop-sidebar-style');
+//     if (menu.style.display === 'none') {
+//         menu.style.display = 'block';
+//     } else {
+//         menu.style.display = 'none';
+//     }
+// });
+

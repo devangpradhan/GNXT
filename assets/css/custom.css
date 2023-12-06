@@ -2937,16 +2937,16 @@ input {
 @media (min-width:768px){
 
   /* First column */
-  .table tr .first-column{
+  /* .table tr .first-column{
    min-width:175px !important;
    width:174px;
-  }
+  } */
 
    /* Product image title */
- .compare-area .container .tab-pane .container .row .col-lg-12 .compare-page-content-wrap .compare-table .table tbody tr .product-image-title{
+ /* .compare-area .container .tab-pane .container .row .col-lg-12 .compare-page-content-wrap .compare-table .table tbody tr .product-image-title{
   min-width:250px !important;
- }
- 
+ } */
+
   
  }
 
@@ -2955,10 +2955,6 @@ input {
     6.8 Sidebar CSS 
 ====================*/
 /*-- Shop Sidebar Area Start --*/
-
-
-
-
 
 
 .sidebar-widget .widget-inner .widget-title {
@@ -3084,3 +3080,5 @@ input {
   border-color: #707072;
   outline: 0;
 }
+
+/* mobile filter */
