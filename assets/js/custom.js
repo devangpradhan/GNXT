@@ -22,3 +22,12 @@ $(function () {
 
 // Sidebar popup
 
+
+// document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+//   var menuItems = document.querySelector('.mobile-menu-items');
+//   if (menuItems.style.display === 'none') {
+//       menuItems.style.display = 'block';
+//   } else {
+//       menuItems.style.display = 'none';
+//   }
+// });
