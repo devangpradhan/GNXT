@@ -3082,3 +3082,10 @@ input {
 }
 
 /* mobile filter */
+
+
+/* pointer */
+.point-disc li {
+  list-style-type: disc;
+  margin-left: 50px;
+}
