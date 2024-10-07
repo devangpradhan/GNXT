@@ -2850,11 +2850,21 @@ input {
  /* gif icon */
 
  .product-small-img-style .slick-list .gif-img-btn {
-  
   margin-bottom: 20px;
 }
 
 .product-small-img-style .slick-list .gif-img-btn img {
+  cursor: pointer;
+}
+
+ /* Application View */
+
+.product-small-img-style .slick-list .av-icon-btn {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.product-small-img-style .slick-list .av-icon-btn img {
   cursor: pointer;
 }
 

@@ -1097,7 +1097,7 @@
         Categori slider active
     -----------------------------------*/
   $(".categori-slider-active").slick({
-    slidesToShow: 6,
+    slidesToShow: 7,
     slidesToScroll: 1,
     dots: false,
     fade: false,
@@ -1449,57 +1449,19 @@ $(".sico, .search-close").on("click", function () {
 //     });
 //   });
 
-const leftBtn = document.getElementById("left-btn");
-const rightBtn = document.getElementById("right-btn");
-const menuWrapper = document.querySelector(".menu-wrapper");
-const menu = document.querySelector(".iconmenu");
 
-// Function to determine how much to scroll based on screen width
-function getScrollAmount() {
-  const viewportWidth = window.innerWidth;
-  if (viewportWidth < 480) {
-    return 100; // Small scroll amount for small screens
-  } else if (viewportWidth < 768) {
-    return 150; // Medium scroll amount for medium screens
-  } else {
-    return 200; // Larger scroll amount for larger screens
-  }
-}
-
-// Scroll left button functionality
-leftBtn.addEventListener("click", () => {
-  menuWrapper.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
-  updateButtonsState(); // Update button state after scrolling
+document.querySelector('.scroll-left').addEventListener('click', function() {
+  const container = document.querySelector('.sub-menu-fullwidth');
+  container.scrollBy({
+    left: -200, // Adjust scroll distance as needed
+    behavior: 'smooth'
+  });
 });
 
-// Scroll right button functionality
-rightBtn.addEventListener("click", () => {
-  menuWrapper.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
-  updateButtonsState(); // Update button state after scrolling
+document.querySelector('.scroll-right').addEventListener('click', function() {
+  const container = document.querySelector('.sub-menu-fullwidth');
+  container.scrollBy({
+    left: 200, // Adjust scroll distance as needed
+    behavior: 'smooth'
+  });
 });
-
-// Update the state of the buttons based on the current scroll position
-function updateButtonsState() {
-  // If the scroll position is at the very left
-  if (menuWrapper.scrollLeft === 0) {
-    leftBtn.disabled = true;
-  } else {
-    leftBtn.disabled = false;
-  }
-
-  // If the scroll position is at the very right
-  if (
-    menuWrapper.scrollLeft + menuWrapper.clientWidth >=
-    menuWrapper.scrollWidth
-  ) {
-    rightBtn.disabled = true;
-  } else {
-    rightBtn.disabled = false;
-  }
-}
-
-// Initial state check
-updateButtonsState();
-
-// Update button state on window resize to handle dynamic content resizing
-window.addEventListener("resize", updateButtonsState);
