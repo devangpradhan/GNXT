@@ -4,5 +4,7 @@
     "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
     "liveServer.settings.CustomBrowser": "microsoft-edge",
     "pieces.cloudCapabilities": "Blended",
-    "pieces.telemetry": true
+    "pieces.telemetry": true,
+    "frontMatter.framework.id": "astro",
+    "frontMatter.preview.host": "http://localhost:4321"
 }

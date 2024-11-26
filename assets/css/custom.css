@@ -1406,7 +1406,7 @@ li.typ-sel {
   }
 }
 
-/*.wrapper{
+/*.sub-menu-fullwidth{
     width: 300px;
     background: #ffffff;
     border-radius: 10px;
@@ -1564,7 +1564,7 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
-.wrapper1 {
+.sub-menu-fullwidth1 {
   overflow: hidden;
   border-radius: 5px;
   background-color: #ffffff;
@@ -2966,7 +2966,6 @@ input {
 ====================*/
 /*-- Shop Sidebar Area Start --*/
 
-
 .sidebar-widget .widget-inner .widget-title {
   font-weight: 500;
   font-size: 20px;
@@ -3093,9 +3092,88 @@ input {
 
 /* mobile filter */
 
-
 /* pointer */
 .point-disc li {
   list-style-type: disc;
   margin-left: 50px;
+}
+
+/* Scroll Menu */
+
+
+.sub-menu-fullwidth {
+  padding: 35px;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 10px;
+}
+.sub-menu-fullwidth .icon {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.icon:first-child {
+  left: 0;
+  display: none;
+  background: linear-gradient(90deg, #fff 70%, transparent);
+}
+.icon:last-child {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(-90deg, #fff 70%, transparent);
+}
+.icon i {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+}
+.icon i:hover {
+  background: #efedfb;
+}
+.icon:first-child i {
+  margin-left: 15px;
+} 
+.icon:last-child i {
+  margin-right: 15px;
+} 
+.sub-menu-fullwidth .tabs-box {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+.tabs-box .menu-item {
+  /* cursor: pointer; */
+  font-size: 1.18rem;
+  white-space: nowrap;
+  /* background: #f5f4fd; */
+  /* padding: 13px 20px; */
+  border-radius: 10px;
+  /* border: 1px solid #d8d5f2; */
+}
+.tabs-box .tab:hover{
+  background: #efedfb;
+}
+.tabs-box.dragging .menu-item {
+  user-select: none;
+  pointer-events: none;
+}
+.tabs-box .tab.active{
+  color: #fff;
+  background: #5372F0;
+  border-color: transparent;
 }
